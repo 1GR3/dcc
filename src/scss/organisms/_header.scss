@@ -1,4 +1,5 @@
 header {
+	@include outer-container(100%);
 	background: $color-primary url(../../img/durdledoor.jpg) center 70% no-repeat;
 	background-size: cover;
 	color: white;
@@ -67,6 +68,14 @@ header {
 				}	
 			}
 		}
+		.offers {
+			
+			div {
+				@include span-columns(4);
+				text-align: center;
+			}
+		}
+		
 	}
 	
 }
