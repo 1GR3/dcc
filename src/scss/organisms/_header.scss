@@ -1,0 +1,72 @@
+header {
+	background: $color-primary url(../../img/durdledoor.jpg) center 70% no-repeat;
+	background-size: cover;
+	color: white;
+	float: left;
+	width: 100%;
+	z-index: 100;
+	clear: both;
+	.navigation {
+		display: block;
+		overflow: auto;
+		clear: both;
+		nav {
+			ul{
+				padding: 0;
+				li {
+					display: inline-block;
+					&:after{
+						content: "|";
+						color: white;
+						padding: 0 3px;
+					}
+					&:last-child:after{
+						content: "";
+						padding: 0 3px;
+					}
+					a {
+						color: white;
+						@include underlined-link(white);
+					}
+				}
+			}
+			&.main-nav {
+				float: left;
+			}
+			&.personal-nav {
+				float: right;
+			}
+		}
+	}
+	.brand {
+		h1, h2 {
+			text-align: center;
+		}
+	}
+	&.landingpage {
+		background: $color-primary url(../../img/durdledoor.jpg) center 70% no-repeat;
+		background-size: cover;
+		font-size: 14px;
+		color: #FFFFFF;
+		letter-spacing: 0px;
+		text-shadow: 0px 0px 2px rgba(0,0,0,0.50);
+		.brand {
+			h1, h2 {
+				font-weight: bold;
+				text-shadow: 0px 1px 10px rgba(0,0,0,0.30);
+			}
+		}
+		.book {
+			padding: 20px 0;
+			margin: auto;
+			form {
+				input, .select, button {
+					display: inline-block;
+					height: 36px;
+					margin: 0 10px;
+				}	
+			}
+		}
+	}
+	
+}
