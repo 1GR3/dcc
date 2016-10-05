@@ -50,7 +50,7 @@ $font-family-sans-fallback:   'Arial', sans-serif;
 // $font-family-sans - {list}
 // @requires - `$font-family-sans-fallback`
 
-$font-family-sans:            'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
+$font-family-sans:            'Roboto', sans-serif, $font-family-sans-fallback;
 
 // $font-family-serif
 //
@@ -58,7 +58,7 @@ $font-family-sans:            'Helvetica Neue', 'Helvetica', $font-family-sans-f
 //
 // $font-family-serif - {list}
 
-$font-family-serif:           'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+$font-family-serif:           'Roboto slab', serif;
 
 // $font-family-monospace
 //

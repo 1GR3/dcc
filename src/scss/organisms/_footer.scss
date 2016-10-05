@@ -1,0 +1,49 @@
+footer {
+	@include outer-container(100%);
+	box-shadow: 0 -2px 7px rgba(#000,.25);
+	margin-top: 25px;
+	nav {
+		@include span-columns(2);
+		
+		h6 {
+			
+			font-size: 16px;
+			text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
+			&:before {
+				content: "•";
+				color: $green;
+				margin-right: 10px;
+			}
+		}
+		
+		ul {
+			list-style-type: none;
+			padding-left: 15px;
+			
+			li {
+				
+			}
+		}
+		&.social {
+			@include span-columns(4);
+			@include omega();
+			text-align: right;
+			ul {
+				li {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.background-dark {
+		@include span-columns(12);
+		@include omega();
+		.info {
+			@include span-columns(7);
+		}
+		.newsletter {
+			@include span-columns(5);
+			@include omega();
+		}
+	}
+}
