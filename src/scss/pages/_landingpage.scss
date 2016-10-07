@@ -1,7 +1,12 @@
 #landingpage {
 	#icons {
-		@include outer-container(100%);
+		width: 100%;
 		float: left;
+		background: white;
+		position: relative;
+		z-index: 1;
+		
+		
 		
 		&:before, &:after {
 			content: "";
@@ -19,12 +24,16 @@
 		}
 		
 		.wrapper {
-			@include outer-container(100%);
+			@include outer-container();
 			padding: 25px 0;
 			margin: auto;
 			
 			div {
 				@include span-columns(3);
+				@include media($mobile) {
+					@include span-columns(10 of 12);
+					@include shift(1);
+				}
 				img{
 					width: 75px;
 					height: 75px;
@@ -36,15 +45,20 @@
 	#themes {
 		@include outer-container(100%);
 		@include fill-parent();
-		
-		&>div {
+		box-shadow: 0 4px 7px rgba(#000,.25), 0 -4px 7px rgba(#000,.25);
+		z-index: 50;
+		position: relative;
+		&>a {
 			@include span-columns(4);
 			@include reset-display;
 			@include pad();
-			background-size: cover;
+			background-size: 110%, 110%;
+			background-position: center center; 
 			width: 33.333%;
 			margin: 0;
 			padding-bottom: 20px;
+			transition: background-size .25s ease-in;
+			
 			
 			h3 {
 				text-align: center;
@@ -56,6 +70,15 @@
 				margin: 160px 0 0;
 				
 			}
+			
+			@include media($mobile) {
+				@include span-columns(12);
+				border-bottom: 2px solid white;
+				h3 {
+					margin: 100px 0 0;
+				}
+			}
+			
 			
 			&:nth-child(1) {
 				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t1.jpg");
@@ -87,20 +110,32 @@
 			&:nth-child(3n+0) {
 				@include omega();
 			}
-			
+			&:hover {
+				background-size: 120%; 
+			}
 		}
 	}
 	#news {
-		h4 {
-			font-weight: 100;
-			font-size: 48px;
-			color: $dark-grey;
-			text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
-			text-align: center;
-		}
-		@include outer-container;
-		article {
-			@include span-columns(4);
+		background: white;
+		position: relative;
+		z-index: 1;
+		padding: 30px 0 50px;
+		.wrapper {
+			h4 {
+				font-weight: 100;
+				font-size: 48px;
+				color: $dark-grey;
+				text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
+				text-align: center;
+			}
+			@include outer-container;
+			article {
+				@include span-columns(4);
+				@include media($mobile) {
+					@include span-columns(10 of 12);
+					@include shift(1);
+				}
+			}
 		}
 	}
 	

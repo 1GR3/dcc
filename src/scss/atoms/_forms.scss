@@ -7,13 +7,18 @@
 // that can’t be broken down any further without ceasing to be functional.
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
+input, .select, button {
+	display: inline-block;
+	height: 36px;
+}	
 
 button, select {
 	border-radius: 0 !important;
 }
-
+input[type="date"] {
+	border: 1px solid $green;
+}
 .select {
-    border: 1px solid #ccc;
     width: 120px;
     border-radius: 0;
     overflow: hidden;
@@ -32,7 +37,6 @@ button, select {
 	    &:focus {
 		    outline: none;
 		}
-
 	}
 }
 
@@ -43,12 +47,24 @@ button, select {
 .btn-transparent {
 	background: rgba(white, .25);
 	border: 1px solid white;
-	color: inherit	
+	color: inherit;
+	padding: 10px 20px;
+	transition: all .2s;
+}
+.btn-transparent:hover {
+	background: $green;
+	box-shadow: 0 5px 10px rgba(#000,.5);
 }
 .btn-submit {
 	background: $color-primary;
 	border: 1px solid white;
-	color: white;	
+	color: white;
+	transition: all .2s;
+}
+.btn-submit:hover {
+	background: white;
+	color: $green;
+	box-shadow: 0 5px 10px rgba(#000,.5);
 }
 .btn-request {
 	background: white;
