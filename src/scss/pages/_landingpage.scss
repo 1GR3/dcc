@@ -33,8 +33,11 @@
 				@include media($mobile) {
 					@include span-columns(10 of 12);
 					@include shift(1);
+					margin-bottom: 40px;
+					&:last-child{margin-bottom: 0}
 				}
 				img{
+					display: block;
 					width: 75px;
 					height: 75px;
 					margin: auto;
@@ -131,6 +134,15 @@
 			@include outer-container;
 			article {
 				@include span-columns(4);
+				h5 {
+					font-size: 20px;
+					color: $green;
+				}
+				.date { 
+					font-family: $font-family-serif;
+					font-weight: bold;
+					font-size: 12px;
+				}
 				@include media($mobile) {
 					@include span-columns(10 of 12);
 					@include shift(1);

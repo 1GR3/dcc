@@ -5,6 +5,7 @@ footer {
 	z-index: 5;
 	position: relative;
 	nav {
+		margin-top: 20px;
 		@include span-columns(2);
 		@include media($mobile) {
 			@include span-columns(10 of 12);
@@ -17,6 +18,7 @@ footer {
 		h6 {
 			
 			font-size: 16px;
+			margin: 10px 0;
 			text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
 			&:before {
 				content: "•";
@@ -28,6 +30,7 @@ footer {
 		ul {
 			list-style-type: none;
 			padding-left: 15px;
+			margin: 5px 0;
 			
 			li {
 				
@@ -40,12 +43,24 @@ footer {
 				@include span-columns(10 of 12);
 				@include shift(1);
 				border-bottom: 2px solid white;
+				.btn {
+					width: 100%;
+				}
 				h3 {
 					margin: 100px 0 0;
 				}
+				ul {
+					text-align: center;
+					clear: both;
+					li {
+						margin: 0 10px;
+					}
+				}
 			}
+			.btn {float: right; text-align: center;}
 			text-align: right;
 			ul {
+				padding-left: 0;
 				li {
 					display: inline-block;
 				}
@@ -55,6 +70,7 @@ footer {
 	.background-dark {
 		@include span-columns(12);
 		@include omega();
+		margin-top: 20px;
 		.info {
 			@include span-columns(7);
 			@include media($mobile) {
@@ -65,9 +81,22 @@ footer {
 		.newsletter {
 			@include span-columns(5);
 			@include omega();
+			text-align: right;
+			margin: 35px 0;
+			form { display: inline-block; margin-left: 10px }
 			@include media($mobile) {
 				@include span-columns(10 of 12);
 				@include shift(1);
+				span {
+					display: inline-block;
+					padding-bottom: 10px;
+				}
+				form { 
+					margin-left: 0;
+					width: 100%;
+					input {width: 65%; float: left;}
+					button {width: 30%}
+				}
 			}
 		}
 	}
