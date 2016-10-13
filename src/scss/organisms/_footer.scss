@@ -4,9 +4,20 @@ footer {
 	background: white;
 	z-index: 5;
 	position: relative;
+	float:left;
 	nav {
 		margin-top: 20px;
 		@include span-columns(2);
+		@include media($tablet) {
+			@include span-columns(5 of 12);
+			&:nth-child(2n-1) {
+				@include shift(1);
+			}
+			border-bottom: 2px solid white;
+			h3 {
+				margin: 100px 0 0;
+			}
+		}
 		@include media($mobile) {
 			@include span-columns(10 of 12);
 			@include shift(1);
@@ -39,6 +50,33 @@ footer {
 		&.social {
 			@include span-columns(4);
 			@include omega();
+			@include media($tablet) {
+				@include span-columns(10 of 12);
+				@include shift(1);
+				border-bottom: 2px solid white;
+				.btn {
+					@include span-columns(5 of 10);
+					@include shift(0);
+					float: left !important;
+					clear: none;
+				}
+				h3 {
+					margin: 100px 0 0;
+				}
+				ul {
+					text-align: center;
+					clear: both;
+					@include span-columns(5 of 10);
+					@include shift(0);
+					float: left;
+					clear: none;
+					margin: 25px 0;
+					li {
+						margin: 0 10px;
+						float: left;
+					}
+				}
+			}
 			@include media($mobile) {
 				@include span-columns(10 of 12);
 				@include shift(1);
@@ -52,8 +90,10 @@ footer {
 				ul {
 					text-align: center;
 					clear: both;
+					width: 100%;
 					li {
 						margin: 0 10px;
+						float: none;
 					}
 				}
 			}
@@ -73,9 +113,11 @@ footer {
 		margin-top: 20px;
 		.info {
 			@include span-columns(7);
-			@include media($mobile) {
+			
+			@include media($tablet) {
 				@include span-columns(10 of 12);
 				@include shift(1);
+				margin-top: 30px;
 			}
 		}
 		.newsletter {
@@ -84,9 +126,12 @@ footer {
 			text-align: right;
 			margin: 35px 0;
 			form { display: inline-block; margin-left: 10px }
-			@include media($mobile) {
+			@include span-columns(7);
+			
+			@include media($tablet) {
 				@include span-columns(10 of 12);
 				@include shift(1);
+				margin-top: 10px;
 				span {
 					display: inline-block;
 					padding-bottom: 10px;

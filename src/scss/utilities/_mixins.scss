@@ -141,3 +141,28 @@
 // @usage - `@include invisible`
 
 @mixin invisible { visibility: hidden; }
+
+@mixin box-sizing($type) {
+    box-sizing: $type;
+    -moz-box-sizing: $type;
+    -webkit-box-sizing: $type;
+}
+
+@mixin outer-container-margin {
+	@include outer-container;
+	max-width: $max-width;
+	padding: 0 flex-gutter($grid-columns) / 2;
+	@include box-sizing(content-box);
+	@each $breakpoint in $visual-grid-breakpoints {
+		@if $breakpoint != nil {
+			@include media($breakpoint) {
+				padding: 0 flex-gutter($grid-columns);
+			}
+		}
+	}
+}
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
