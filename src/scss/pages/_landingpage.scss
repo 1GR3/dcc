@@ -124,11 +124,7 @@
 				background-size: 120%; 
 			}
 			@include media($tablet) {
-				width: 50%;
-				//@include omega-reset(n);
-				//border-bottom: 2px solid white;
-				
-				
+				width: 50%;				
 				height: 160px;
 				
 				&:nth-child(2n){@include omega();}
@@ -147,35 +143,84 @@
 				
 				h3 {
 					margin: 0;
+					
 				}
 			}
 		}
 	}
 	#news {
+	width: 100%;
 		background: white;
 		position: relative;
 		z-index: 1;
 		padding: 30px 0 50px;
 		float:left;
 		.wrapper {
-			h4 {
-				font-weight: 100;
-				font-size: 48px;
-				color: $dark-grey;
-				text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
-				text-align: center;
+			.headline-holder {
+				@include span-columns(10 of 12);
+				@include shift(1);
+				h4 {
+					font-weight: 100;
+					font-size: 48px;
+					color: $dark-grey;
+					text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
+					text-align: center;
+					position: relative;
+					z-index: 2;
+					
+					&:before {
+						content: "";
+						display: block;
+						position: relative;
+						width: 60%;
+						margin: auto;
+					    height: 50px;
+					    background: white;
+						z-index: -1;
+						margin-bottom: -50px;
+					}
+					&:after {
+						content: "";
+						display: block;
+						position: relative;
+						width: 100%;
+						margin: auto;
+					    margin-top: -28px;
+					    background: $dark-grey;
+					    box-shadow: 0px 0px 1px rgba(0,0,0,0.50);
+					    height: 1px;
+						z-index: -2;
+					}
+					@include media($mobile) {
+						font-size: 36px;
+						font-weight: 300;
+						&:before {width: 85%;}
+						&:after {margin-top: -20px;}
+					}
+				}
 			}
+			
 			@include outer-container;
 			article {
 				@include span-columns(4);
 				h5 {
+					@include span-columns(4 of 4);
 					font-size: 20px;
 					color: $green;
 				}
-				.date { 
+				p {
+					@include span-columns(3 of 4);
+					margin-top: 0;
+				}
+				img {
+					@include span-columns(1 of 4);
+				}
+				.date {
+					@include span-columns(3 of 4);
 					font-family: $font-family-serif;
 					font-weight: bold;
 					font-size: 12px;
+					text-align: right;
 				}
 				@include media($tablet) {
 					@include span-columns(8 of 12);

@@ -93,7 +93,9 @@ header {
 			}
 			&.personal-nav {
 				float: right;
-				margin-right: 10px;
+				.logged-out {
+				    margin-top: 24px;
+				}
 			}
 		}
 	}

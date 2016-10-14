@@ -1,5 +1,5 @@
 footer {
-	@include outer-container(100%);
+	width: 100%;
 	box-shadow: 0 -2px 7px rgba(#000,.25);
 	background: white;
 	z-index: 5;
@@ -126,7 +126,7 @@ footer {
 			text-align: right;
 			margin: 35px 0;
 			form { display: inline-block; margin-left: 10px }
-			@include span-columns(7);
+			@include span-columns(5);
 			
 			@include media($tablet) {
 				@include span-columns(10 of 12);
