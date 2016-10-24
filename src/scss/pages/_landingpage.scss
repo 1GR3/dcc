@@ -24,7 +24,7 @@
 		.wrapper {
 			@include outer-container();
 			@include outer-container-margin;
-			padding: 25px 0;
+			padding-top: 25px;
 			margin: auto;
 			
 			div {
