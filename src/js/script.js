@@ -7,4 +7,9 @@ $( document ).ready(function() {
 	  transitionStyle : "fadeUp"
 	});
     
+	$('.pictures').slick({
+	    setting-name: setting-value
+	});
+	
+	console.log("olala")
 });

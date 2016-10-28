@@ -69,7 +69,7 @@ footer {
 					@include span-columns(5 of 10);
 					@include shift(0);
 					float: left;
-					clear: none;
+					clear: both;
 					margin: 25px 0;
 					li {
 						margin: 0 10px;

@@ -15,7 +15,7 @@
 }
 header {
 	@include outer-container(100%);
-	//background: $color-primary url(../../img/durdledoor.jpg) center 70% no-repeat;
+	background-color: $color-primary;
 	background-size: cover;
 	color: white;
 	float: left;
@@ -96,16 +96,39 @@ header {
 				.logged-out {
 				    margin-top: 24px;
 				}
+				.logged-in {
+				    margin-top: 18px;
+				    li {
+					    
+					    background: white;
+					    border-radius: 20px;
+					    margin-left: 10px;
+					    padding: 5px 10px;
+					    a {
+							font-size: 20px;
+						    font-family: $font-family-serif;
+						    color: $color-primary;
+					    }
+					    &:last-child {
+						    
+						    background: none;
+						    a{ color: white;}
+					    }
+				    }
+				}
 			}
 		}
 	}
 	.brand {
-		
+		img { float: left }
+		h1 { float: left; margin: 2px 10px 15px; }
+		h2 { display: none }
 	}
 	.book {
 		@include outer-container();
 		padding: 30px 0 130px;
 		margin: auto;
+		display: none;
 		form {
 			@include span-columns(8);
 			@include shift(2);
@@ -123,6 +146,7 @@ header {
 	&.landingpage {
 		//background: $color-primary center 70% no-repeat;
 		background-image: linear-gradient(to bottom, rgba(#000, 0.5), rgba(#000, 0.0), rgba(#000, 0));
+		background-color: transparent;
 		background-size: cover;
 		font-size: 14px;
 		color: #FFFFFF;
@@ -138,10 +162,12 @@ header {
 			h1 {
 				font-size: 48px;
 				margin:  0 0 30px;
+				float: none;
 			}
 			h2 {
 				font-size: 36px;
 				margin: 30px 0 0;
+				display: inline;
 			}
 			@include media($mobile) {
 				h1 {
@@ -154,6 +180,7 @@ header {
 				}
 			}
 		}
+		.book { display: block }
 		
 		.offers {		
 			@include outer-container(100%);
