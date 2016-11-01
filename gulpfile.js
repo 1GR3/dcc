@@ -139,7 +139,7 @@ gulp.task('deploy', function() {
 
 gulp.task('js-app', function() {
   gulp.src(bases.app + 'js/*.js')
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(concat('app.js'))
     .pipe(gulp.dest(bases.dist + 'js'))
@@ -148,7 +148,7 @@ gulp.task('js-app', function() {
 
 gulp.task('js-libs', function() {
   gulp.src([bases.app + 'js/libs/*.js', '!' + bases.app + 'js/libs/modernizr.js'])
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(concat('libs.js'))
     .pipe(gulp.dest(bases.dist + 'js'))
@@ -236,3 +236,15 @@ gulp.task('default', function(done) {
 gulp.task('build', function(done) {
   runSequence('clean:dist', 'js-app', 'js-libs', 'imagemin', 'minify-html', 'styles', 'copy', done);
 });
+
+
+// error log
+/*
+gulp.task('scripts', ['clean'], function () {
+  return gulp.src('js/*.js')
+    .pipe(uglify().on('error', function(e){
+        console.log(e);
+     }))
+    .pipe(gulp.dest('minjs'));
+});
+*/
