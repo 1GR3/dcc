@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-parking</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="16" height="19"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="19" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-10" transform="translate(-7.000000, -6.000000)">
+            <g id="icon-parking" transform="translate(7.000000, 6.000000)">
+                <use id="Rectangle-152" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                <path d="M5.08105469,10.5849609 L5.08105469,15.796875 L4,15.796875 L4,3 L8.359375,3 C9.68945978,3 10.7397422,3.33984035 11.5102539,4.01953125 C12.2807656,4.69922215 12.6660156,5.63378312 12.6660156,6.82324219 C12.6660156,8.02442007 12.2954139,8.95165689 11.5541992,9.60498047 C10.8129846,10.258304 9.73926484,10.5849609 8.33300781,10.5849609 L5.08105469,10.5849609 Z M5.08105469,9.67089844 L8.359375,9.67089844 C9.40820837,9.67089844 10.2080051,9.42187749 10.7587891,8.92382812 C11.3095731,8.42577876 11.5849609,7.73144977 11.5849609,6.84082031 C11.5849609,5.95605026 11.3110379,5.25146747 10.7631836,4.72705078 C10.2153293,4.2026341 9.43750504,3.93457037 8.4296875,3.92285156 L5.08105469,3.92285156 L5.08105469,9.67089844 Z" id="P" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.40808735,16.5561741 L2,10.0002788 L11.9999063,10.0002788 L11.9999063,0.000278837507 L11.9244355,0.000278837507 C11.9495705,9.30542182e-05 11.9747275,0 11.9999063,0 C17.185303,0 21.4488952,3.94667731 21.9506243,9 L11.9999063,9 L11.9999063,10 L22,10 C22,12.5254963 21.0637899,14.832331 19.5194905,16.5923865 C19.3576295,16.5326333 19.1826328,16.5 19.0000141,16.5 C18.1716094,16.5 17.500049,17.1715145 17.5,17.9998885 L7.50002812,17.9998885 C7.49998751,17.3129608 7.03818019,16.7338979 6.40808735,16.5561741 Z M12.042057,19.999913 C12.0280135,19.999971 12.0139633,20 11.9999063,20 C11.9859082,20 11.971917,19.9999712 11.9579324,19.9999138 L12.042057,19.999913 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="20" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="19" cy="18" r="3"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6" height="6" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <circle id="path-5" cx="6" cy="18" r="3"></circle>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="6" height="6" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-5" transform="translate(-3.000000, -5.000000)">
+            <g id="Group" transform="translate(3.000000, 5.000000)">
+                <use id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                <path d="M0,9.24375959 C-3.36254302e-10,8.5 1,8.5 1,8.5 L3,8.5 L4,10 L1,10 C1,10 3.36254261e-10,9.98751917 0,9.24375959 Z" id="Rectangle-14" fill="#FFFFFF"></path>
+                <use id="Oval-5" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="3" xlink:href="#path-3"></use>
+                <use id="Oval-5-Copy" stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="3" xlink:href="#path-5"></use>
+            </g>
+        </g>
+    </g>
+</svg>

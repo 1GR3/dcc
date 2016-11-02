@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="17px" viewBox="0 0 8 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-access</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Artboard-Copy-13" transform="translate(-11.000000, -7.000000)" stroke="#FFFFFF">
+            <g id="icon-access" transform="translate(11.000000, 7.000000)">
+                <path d="M0.5,0.5 C0.5,0.5 0.57842679,1.52677298 2.47628176,1.52677298 C4.37413673,1.52677298 5.45651579,-0.510297894 7.5,1.5" id="Line"></path>
+                <path d="M2.5,16.5 L2.5,2.5" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>
