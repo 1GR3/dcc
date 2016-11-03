@@ -96,8 +96,8 @@
 		  	</div>
 		  	<div class="brand">
 		  		<img src="/img/logo.svg">
-			  	<h2>Welcome to</h2>
-			  	<h1>Dorset Coastal Cottages</h1>
+			  	<span>Welcome to</span>
+			  	<strong>Dorset Coastal Cottages</strong>
 		  	</div>
 		  	<div class="book">
 			  	<form name="book">
@@ -133,10 +133,9 @@
 	<div class="content">
 		<article>
 			<div class="header">
-				<img src="img/logo.svg" class="loc-type">
-				<button class="btn-favorite"><span class="icon-hearth"></span></button>
-				<h2>Cottage name</h2>
-				<span class="location"></span>
+				<!-- <img src="img/logo.svg" class="loc-type"> -->
+				<h1>Cottage name</h1>
+				<span class="location">Location Name</span>
 				<div class="star-rating"></div>
 			</div>
 			<ul class="slickslide">
@@ -154,17 +153,17 @@
 		        </ul>
 		    </div>
 		    <div class="description">
-		    	<h3>Property Description</h3>
-		    	<p>Located on an exclusive estate, this 19th Century former kennel for working dogs, is Grade II Star listed and is located within the owner's gravelled courtyard. It offers spacious accommodation with a high level of comfort in peaceful and tranquil surroundings.  All on one level with a high to low sloping ceiling running the length of the building. The secluded garden is reached via a gate across the courtyard and is laid to lawn with terraced area, original flint wall, trellis, shrubs and climbers. 
+		    	<h2>Property Description</h2>
+		    	<p>Located on an exclusive estate, this 19th Century former kennel for working dogs, is Grade II Star listed and is located within the owner's gravelled courtyard. It offers spacious accommodation with a high level of comfort in peaceful and tranquil surroundings.  All on one level with a high to low sloping ceiling running the length of the building. The secluded garden is reached via a gate across the courtyard and is laid to lawn with terraced area, original flint wall, trellis, shrubs and climbers.<br>
 Parking for 1 car.</p>
 
 				<p>Shop 4 miles. 2 Hotels 0.75 miles & 3 miles.
 				All on one level with oak floors throughout. From Entrance door step up to the beamed, open plan Kitchen/Sitting/Dining Room with well defined areas, oak worktops, dishwasher, space for coats and boots (no washing machine); Hall with door to courtyard; beamed Double Bedroom; Shower Bathroom.</p>
 				
-				<p>Central heating. No telephone. Wireless Broadband (email and web browsing only).
+				<p>Central heating. No telephone. Wireless Broadband (email and web browsing only).<br>
 				Rousdon Estate has a private beach for guests to use, Click Here to view a detailed description of how to access the beach.
 				Please see our  help and information page for standard facilities found in all our cottages.</p>
-				<h3>Short breaks</h3>
+				<h2>Short breaks</h2>
 				<p>Short breaks are welcomed at this property all year round, but is subject to peak time restrictions*.
 For a 3 night short break save 30% off a week's price. Mon–Fri breaks are offered at 4 nights for the price of 3.
 (4 nights are priced at 76.7%, 5 at 85% and 6 at 95% of the weeks price)</p>
@@ -174,7 +173,7 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 		</article>
 		<aside class="">
 			<div class="header">
-				
+				<button class="btn-favorite"><span class="icon-hearth"></span></button>
 			</div>
 			<div class="body">
 				<div class="star-rating">
@@ -205,83 +204,151 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 				Weekly price:
 				<span class="">£690-£710</span>
 			</div>
-			
-			<h3>Property Summary</h4>
-			<ul>
-				<li>Detached Single Storey Cottage</li>
-				<li>On 350 acre Private Estate</li>
-				<li>Estate Beach 1 mile</li>
-				<li>Lyme Regis 3 miles</li>
-				<li>Adults Only</li>
-				<li>Dogs Not Permitted<br>
-				<small>(Small dog permitted from 13th Aug 2016)</small></li>
-				<li>No Smoking</li>
-				<li>Short breaks - All Year</li>
-			</ul>
-			<div id="calendar"></div>
-			<form>
-				<label><h4>Nights to stay</h4></label>
-				<div class="select">
+			<div class="summary">
+				<h2>Property Summary</h2>
+				<ul>
+					<li>Detached Single Storey Cottage</li>
+					<li>On 350 acre Private Estate</li>
+					<li>Estate Beach 1 mile</li>
+					<li>Lyme Regis 3 miles</li>
+					<li>Adults Only</li>
+					<li>Dogs Not Permitted<br>
+					<small>(Small dog permitted from 13th Aug 2016)</small></li>
+					<li>No Smoking</li>
+					<li>Short breaks - All Year</li>
+				</ul>
+			</div>
+			<div id="calendar">
+				  <header>
+				    <button class="btn-round">«</button>
+				    <h2>SEPTEMBER 2016</h2>
+				    <button class="btn-round">»</button>
+				  </header>
+				<table>
+					<thead>
+					  <tr>
+					    <td>SUN</td>
+					    <td>MON</td>
+					    <td>TUE</td>
+					    <td>WED</td>
+					    <td>THU</td>
+					    <td>FRI</td>
+					    <td>SAT</td>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+					    <td class="nc">29</td>
+					    <td class="nc">31</td>
+					    <td>1</td>
+					    <td>2</td>
+					    <td>3</td>
+					    <td>4</td>
+					    <td>5</td>
+					  </tr>
+					  <tr>
+					    <td>6</td>
+					    <td>7</td>
+					    <td>8</td>
+					    <td>9</td>
+					    <td>10</td>
+					    <td>11</td>
+					    <td>12</td>
+					  </tr>
+					  <tr>
+					    <td>13</td>
+					    <td>14</td>
+					    <td>15</td>
+					    <td>16</td>
+					    <td class="selected">17</td>
+					    <td>18</td>
+					    <td>19</td>
+					  </tr>
+					  <tr>
+					    <td>20</td>
+					    <td>21</td>
+					    <td>22</td>
+					    <td>23</td>
+					    <td>24</td>
+					    <td>25</td>
+					    <td>26</td>
+					  </tr>
+					  <tr>
+					    <td>27</td>
+					    <td>28</td>
+					    <td>29</td>
+					    <td>30</td>
+					    <td class="nc">1</td>
+					    <td class="nc">2</td>
+					    <td class="nc">3</td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+			<form class="book">
+				<div class="double"><label><strong>Nights to stay</strong></label></div>
+				<div class="select double last">
 				  <select>
 				    <option value="" disabled selected>Duration</option>
-				    <option value="1">1 day</option>
-				    <option value="2">2 days</option>
-				    <option value="3">3 days</option>
-				    <option value="4">4 days</option>
-				    <option value="5">5 days</option>
-				    <option value="6">6 days</option>
-				    <option value="7">7 days</option>
-				    <option value="8">8 days</option>
-				    <option value="9">9 days</option>
-				    <option value="10">10 days</option>
-				    <option value="11">11 days</option>
-				    <option value="12">12 days</option>
-				    <option value="13">13 days</option>
-				    <option value="14">14 days</option>
+				    <option value="2">2 nigts</option>
+				    <option value="3">3 nigts</option>
+				    <option value="4">4 nigts</option>
+				    <option value="5">5 nigts</option>
+				    <option value="6">6 nigts</option>
+				    <option value="7">7 nigts</option>
+				    <option value="8">8 nigts</option>
+				    <option value="9">9 nigts</option>
+				    <option value="10">10 nigts</option>
+				    <option value="11">11 nigts</option>
+				    <option value="12">12 nigts</option>
+				    <option value="13">13 nigts</option>
+				    <option value="14">14 nigts</option>
 				  </select>
-				</div>
-				<label><h4>Number of guests</h4> Adults:</label>
+				</div><br>
+				<div class="double"><label><strong>Number of guests</strong></label></div>
+				<div><label> Adults:</label></div>
 				<div class="select">
 				  <select>
 				    <option value="" disabled selected>-</option>
-				    <option value="1">1 day</option>
-				    <option value="2">2 days</option>
-				    <option value="3">3 days</option>
-				    <option value="4">4 days</option>
-				    <option value="5">5 days</option>
-				    <option value="6">6 days</option>
-				    <option value="7">7 days</option>
-				    <option value="8">8 days</option>
+				    <option value="1">1 guest</option>
+				    <option value="2">2 guests</option>
+				    <option value="3">3 guests</option>
+				    <option value="4">4 guests</option>
+				    <option value="5">5 guests</option>
+				    <option value="6">6 guests</option>
+				    <option value="7">7 guests</option>
+				    <option value="8">8 guests</option>
 				  </select>
-				</div>
-				<label>Children:</label>
+				</div><br>
+				<div><label>Children:</label></div>
 				<div class="select">
 				  <select>
 				    <option value="" disabled selected>-</option>
-				    <option value="1">1 day</option>
-				    <option value="2">2 days</option>
-				    <option value="3">3 days</option>
-				    <option value="4">4 days</option>
-				    <option value="5">5 days</option>
-				    <option value="6">6 days</option>
-				    <option value="7">7 days</option>
-				    <option value="8">8 days</option>
+				    <option value="1">1 child</option>
+				    <option value="2">2 children</option>
+				    <option value="3">3 children</option>
+				    <option value="4">4 children</option>
+				    <option value="5">5 children</option>
+				    <option value="6">6 children</option>
+				    <option value="7">7 children</option>
+				    <option value="8">8 children</option>
 				  </select>
 				</div>
-				<label>Infants:</label>
+				<div><label>Infants:</label></div>
 				<div class="select">
 				  <select>
 				    <option value="" disabled selected>-</option>
-				    <option value="1">1 day</option>
-				    <option value="2">2 days</option>
-				    <option value="3">3 days</option>
-				    <option value="4">4 days</option>
-				    <option value="5">5 days</option>
-				    <option value="6">6 days</option>
-				    <option value="7">7 days</option>
-				    <option value="8">8 days</option>
+				    <option value="1">1 infant</option>
+				    <option value="2">2 infants</option>
+				    <option value="3">3 infants</option>
+				    <option value="4">4 infants</option>
+				    <option value="5">5 infants</option>
+				    <option value="6">6 infants</option>
+				    <option value="7">7 infants</option>
+				    <option value="8">8 infants</option>
 				  </select>
 				</div>
+				<button class="btn-big" type="submit">Book now!</button>
 			</form>
 		</aside>
 		

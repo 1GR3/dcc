@@ -15,7 +15,12 @@
 			float: left;
 			padding: 0;
 			.header {
-				height: 150px;
+				height: 120px;
+				h1 {margin: 0 0 5px}
+				.location {
+					color: $color-primary;
+					font-size: 20px;
+				}
 			}
 			
 		}
@@ -26,7 +31,7 @@
 			float: left;
 			padding: 0;
 			.header {
-				height: 150px;
+				height: 120px;
 				background: white;
 			}
 			.body {
@@ -37,6 +42,7 @@
 				font-size: 24px;
 				padding: 25px;
 				line-height: 36px;
+				height: 657px;
 			}
 			.price {
 				font-weight: 100;
@@ -51,6 +57,111 @@
 					float: right;
 				}
 			}
+			.summary {
+				padding: 25px;
+				ul {
+					li{ 
+						color: $color-primary;
+						font-size: 24px;
+					}
+				}
+			}
+			#calendar {
+				padding: 25px;
+		    	
+				header {
+			      overflow: clear;
+			      position: relative;
+			      background: transparent;
+			      border-bottom: 2px solid $color-primary;
+			      color: $dark-grey;
+			      box-shadow: none;
+			      padding: 5px 0;
+			      h2 {
+				      font-size: 18px;
+				      font-weight: 700;
+				      margin: 0 0 10px;
+				      text-align: center;
+				    }
+				    button {
+				      position: absolute;
+				      top: -4px;
+				      &:first-child {
+					    left: 0;
+					  }
+					  &:last-child {
+				      	right: 0;
+				      }
+				    }
+			    }
+			    
+			  
+			    table {
+			      background: #FCFCFC;
+			      border-collapse: collapse;
+			      color: #222;
+			      font-family: 'PT Sans', sans-serif;
+			      font-size: 13px;
+			      width: 100%;
+			      thead td {
+				      background: white;
+				      font-weight: 400;
+				   }
+			      td {
+				      border: 1px solid white;
+				      color: #444;
+				      line-height: 22px;
+				      text-align: center;
+				      height: 60px;
+				      font-size: 20px;
+				      font-weight: 300;
+				      font-family: $font-family-sans;
+				      &.selected {
+					      background: $color-primary;
+					      color: white;
+					      border: 0;
+					   }
+					  &.nc {
+						  
+					  }
+				   }
+				   
+			    }
+			}
+			.book {
+				border-top: 2px solid $color-primary;
+				margin-bottom: 20px;
+				padding: 25px;
+				div{
+					width: 25%;
+					display: inline-block;
+					clear: none;
+					padding-bottom: 25px;
+					&.double {
+						//@include span-columns(6 of 12);
+						width: 50% !important;
+						
+					}
+				}
+				label {
+					
+					font-weight: 300;
+					font-size: 24px;
+					line-height: 28px;
+					strong {
+						font-family: $font-family-serif;
+						font-weight: 400;
+					}
+					
+				}
+				.select {
+					//@include span-columns(3 of 12);
+					
+				}
+				.last {
+					@include omega();
+				}
+			}
 		}
 		
 		#map {
@@ -61,8 +172,5 @@
 		}
 		
 	}
-	
-	
-	
 	
 }

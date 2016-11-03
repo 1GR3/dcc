@@ -15,6 +15,9 @@ input, .select, button {
 button, select {
 	border-radius: 0 ;
 }
+button {
+	border: none;
+}
 input[type="date"], input[type="number"], input[type="text"], {
 	border: 1px solid $green;
 	padding: 0 8px;
@@ -81,15 +84,18 @@ input[type="checkbox"] {
 }
 
 .btn{
-	
+	border: none;
 }
-button.btn-favorite {
+
+button.btn-round {
 	border-radius: 20px;
 	box-sizing: border-box;
 	padding-top: 10px;
 	border: none;
 	width: 40px;
 	height: 40px;
+}
+button.btn-favorite {
 	background: white;
 }
 .btn-transparent {
@@ -98,6 +104,16 @@ button.btn-favorite {
 	color: inherit;
 	padding: 10px 20px;
 	transition: all .2s;
+}
+.btn-big {
+	width: 100%;
+	background: $color-primary;
+	color: white;
+	font-size: 48px;
+	padding: 10px;
+	height: auto;
+	font-family: $font-family-serif;
+	font-weight: 300;
 }
 .btn-transparent:hover {
 	background: $green;
