@@ -1,4 +1,46 @@
 #singlepage {
+	.mobile-hidden{
+		display: block;
+	}
+	@include media($tablet) {
+		.mobile-hidden{
+			display: none
+		}
+		.slick-dots{
+			display: none;
+		}
+		.tab-content{
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+	}
+	.tab-nav {
+		display: none;
+		@include media($tablet) {
+			display: block;
+			background: $dark-grey;
+			padding-left: 0;
+			li {
+				display: inline-block;
+				background: transparent;
+				color: white;
+				margin: 5px 10px;
+				&.active {
+					display: inline-block;
+					background: white;
+					color: $dark-grey;
+					&.booking {
+						background: $color-primary;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	
+
 	.content {
 		@include outer-container;
 		@include fill-parent();
@@ -12,6 +54,9 @@
 		article {
 			@include span-columns(8);
 			@include pad();
+			@include media($tablet) {
+				@include span-columns(12);
+			}
 			float: left;
 			padding: 0;
 			.header {
@@ -28,6 +73,11 @@
 			@include span-columns(4);
 			@include pad();
 			@include omega();
+			
+			@include media($tablet) {
+				@include span-columns(12);
+			}
+			
 			float: left;
 			padding: 0;
 			.header {
@@ -43,6 +93,11 @@
 				padding: 25px;
 				line-height: 36px;
 				height: 657px;
+				@include media($tablet) {
+					font-size: 16px;
+					font-weight: 300;
+					padding: 15px;
+				}
 			}
 			.price {
 				font-weight: 100;
@@ -64,6 +119,13 @@
 						color: $color-primary;
 						font-size: 24px;
 					}
+				}
+				@include media($tablet) {
+					ul li {
+						font-size: 16px;
+					}
+					
+					padding: 15px;
 				}
 			}
 			#calendar {

@@ -152,7 +152,13 @@
 				    <li><img src="/img/property1picture4.jpg"></li>
 		        </ul>
 		    </div>
-		    <div class="description">
+		    <ul class="tab-nav">
+		    	<li class="t1 active">summary</li>
+		    	<li class="t2">description</li>
+		    	<li class="t3">map</li>
+		    	<li class="t4 booking">booking</li>
+		    </ul>
+		    <div class="description tab-content tc-2">
 		    	<h2>Property Description</h2>
 		    	<p>Located on an exclusive estate, this 19th Century former kennel for working dogs, is Grade II Star listed and is located within the owner's gravelled courtyard. It offers spacious accommodation with a high level of comfort in peaceful and tranquil surroundings.  All on one level with a high to low sloping ceiling running the length of the building. The secluded garden is reached via a gate across the courtyard and is laid to lawn with terraced area, original flint wall, trellis, shrubs and climbers.<br>
 Parking for 1 car.</p>
@@ -172,10 +178,10 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 		    </div>
 		</article>
 		<aside class="">
-			<div class="header">
+			<div class="header mobile-hidden">
 				<button class="btn-favorite"><span class="icon-hearth"></span></button>
 			</div>
-			<div class="body">
+			<div class="body tab-content tc-1 active">
 				<div class="star-rating">
 					<span class="icon-ve"></span><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
 				</div>
@@ -200,10 +206,11 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 				<span class="icon-access"></span><span>accessibility</span><br>
 				
 			</div>
-			<div class="price">
+			<div class="price mobile-hidden">
 				Weekly price:
 				<span class="">£690-£710</span>
 			</div>
+			
 			<div class="summary">
 				<h2>Property Summary</h2>
 				<ul>
@@ -218,141 +225,143 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 					<li>Short breaks - All Year</li>
 				</ul>
 			</div>
-			<div id="calendar">
-				  <header>
-				    <button class="btn-round">«</button>
-				    <h2>SEPTEMBER 2016</h2>
-				    <button class="btn-round">»</button>
-				  </header>
-				<table>
-					<thead>
-					  <tr>
-					    <td>SUN</td>
-					    <td>MON</td>
-					    <td>TUE</td>
-					    <td>WED</td>
-					    <td>THU</td>
-					    <td>FRI</td>
-					    <td>SAT</td>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
-					    <td class="nc">29</td>
-					    <td class="nc">31</td>
-					    <td>1</td>
-					    <td>2</td>
-					    <td>3</td>
-					    <td>4</td>
-					    <td>5</td>
-					  </tr>
-					  <tr>
-					    <td>6</td>
-					    <td>7</td>
-					    <td>8</td>
-					    <td>9</td>
-					    <td>10</td>
-					    <td>11</td>
-					    <td>12</td>
-					  </tr>
-					  <tr>
-					    <td>13</td>
-					    <td>14</td>
-					    <td>15</td>
-					    <td>16</td>
-					    <td class="selected">17</td>
-					    <td>18</td>
-					    <td>19</td>
-					  </tr>
-					  <tr>
-					    <td>20</td>
-					    <td>21</td>
-					    <td>22</td>
-					    <td>23</td>
-					    <td>24</td>
-					    <td>25</td>
-					    <td>26</td>
-					  </tr>
-					  <tr>
-					    <td>27</td>
-					    <td>28</td>
-					    <td>29</td>
-					    <td>30</td>
-					    <td class="nc">1</td>
-					    <td class="nc">2</td>
-					    <td class="nc">3</td>
-					  </tr>
-					</tbody>
-				</table>
+			<div class="description tab-content tc-4">
+				<div id="calendar">
+					  <header>
+					    <button class="btn-round">«</button>
+					    <h2>SEPTEMBER 2016</h2>
+					    <button class="btn-round">»</button>
+					  </header>
+					<table>
+						<thead>
+						  <tr>
+						    <td>SUN</td>
+						    <td>MON</td>
+						    <td>TUE</td>
+						    <td>WED</td>
+						    <td>THU</td>
+						    <td>FRI</td>
+						    <td>SAT</td>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+						    <td class="nc">29</td>
+						    <td class="nc">31</td>
+						    <td>1</td>
+						    <td>2</td>
+						    <td>3</td>
+						    <td>4</td>
+						    <td>5</td>
+						  </tr>
+						  <tr>
+						    <td>6</td>
+						    <td>7</td>
+						    <td>8</td>
+						    <td>9</td>
+						    <td>10</td>
+						    <td>11</td>
+						    <td>12</td>
+						  </tr>
+						  <tr>
+						    <td>13</td>
+						    <td>14</td>
+						    <td>15</td>
+						    <td>16</td>
+						    <td class="selected">17</td>
+						    <td>18</td>
+						    <td>19</td>
+						  </tr>
+						  <tr>
+						    <td>20</td>
+						    <td>21</td>
+						    <td>22</td>
+						    <td>23</td>
+						    <td>24</td>
+						    <td>25</td>
+						    <td>26</td>
+						  </tr>
+						  <tr>
+						    <td>27</td>
+						    <td>28</td>
+						    <td>29</td>
+						    <td>30</td>
+						    <td class="nc">1</td>
+						    <td class="nc">2</td>
+						    <td class="nc">3</td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				<form class="book">
+					<div class="double"><label><strong>Nights to stay</strong></label></div>
+					<div class="select double last">
+					  <select>
+					    <option value="" disabled selected>Duration</option>
+					    <option value="2">2 nigts</option>
+					    <option value="3">3 nigts</option>
+					    <option value="4">4 nigts</option>
+					    <option value="5">5 nigts</option>
+					    <option value="6">6 nigts</option>
+					    <option value="7">7 nigts</option>
+					    <option value="8">8 nigts</option>
+					    <option value="9">9 nigts</option>
+					    <option value="10">10 nigts</option>
+					    <option value="11">11 nigts</option>
+					    <option value="12">12 nigts</option>
+					    <option value="13">13 nigts</option>
+					    <option value="14">14 nigts</option>
+					  </select>
+					</div><br>
+					<div class="double"><label><strong>Number of guests</strong></label></div>
+					<div><label> Adults:</label></div>
+					<div class="select">
+					  <select>
+					    <option value="" disabled selected>-</option>
+					    <option value="1">1 guest</option>
+					    <option value="2">2 guests</option>
+					    <option value="3">3 guests</option>
+					    <option value="4">4 guests</option>
+					    <option value="5">5 guests</option>
+					    <option value="6">6 guests</option>
+					    <option value="7">7 guests</option>
+					    <option value="8">8 guests</option>
+					  </select>
+					</div><br>
+					<div><label>Children:</label></div>
+					<div class="select">
+					  <select>
+					    <option value="" disabled selected>-</option>
+					    <option value="1">1 child</option>
+					    <option value="2">2 children</option>
+					    <option value="3">3 children</option>
+					    <option value="4">4 children</option>
+					    <option value="5">5 children</option>
+					    <option value="6">6 children</option>
+					    <option value="7">7 children</option>
+					    <option value="8">8 children</option>
+					  </select>
+					</div>
+					<div><label>Infants:</label></div>
+					<div class="select">
+					  <select>
+					    <option value="" disabled selected>-</option>
+					    <option value="1">1 infant</option>
+					    <option value="2">2 infants</option>
+					    <option value="3">3 infants</option>
+					    <option value="4">4 infants</option>
+					    <option value="5">5 infants</option>
+					    <option value="6">6 infants</option>
+					    <option value="7">7 infants</option>
+					    <option value="8">8 infants</option>
+					  </select>
+					</div>
+					<button class="btn-big" type="submit">Book now!</button>
+				</form>
 			</div>
-			<form class="book">
-				<div class="double"><label><strong>Nights to stay</strong></label></div>
-				<div class="select double last">
-				  <select>
-				    <option value="" disabled selected>Duration</option>
-				    <option value="2">2 nigts</option>
-				    <option value="3">3 nigts</option>
-				    <option value="4">4 nigts</option>
-				    <option value="5">5 nigts</option>
-				    <option value="6">6 nigts</option>
-				    <option value="7">7 nigts</option>
-				    <option value="8">8 nigts</option>
-				    <option value="9">9 nigts</option>
-				    <option value="10">10 nigts</option>
-				    <option value="11">11 nigts</option>
-				    <option value="12">12 nigts</option>
-				    <option value="13">13 nigts</option>
-				    <option value="14">14 nigts</option>
-				  </select>
-				</div><br>
-				<div class="double"><label><strong>Number of guests</strong></label></div>
-				<div><label> Adults:</label></div>
-				<div class="select">
-				  <select>
-				    <option value="" disabled selected>-</option>
-				    <option value="1">1 guest</option>
-				    <option value="2">2 guests</option>
-				    <option value="3">3 guests</option>
-				    <option value="4">4 guests</option>
-				    <option value="5">5 guests</option>
-				    <option value="6">6 guests</option>
-				    <option value="7">7 guests</option>
-				    <option value="8">8 guests</option>
-				  </select>
-				</div><br>
-				<div><label>Children:</label></div>
-				<div class="select">
-				  <select>
-				    <option value="" disabled selected>-</option>
-				    <option value="1">1 child</option>
-				    <option value="2">2 children</option>
-				    <option value="3">3 children</option>
-				    <option value="4">4 children</option>
-				    <option value="5">5 children</option>
-				    <option value="6">6 children</option>
-				    <option value="7">7 children</option>
-				    <option value="8">8 children</option>
-				  </select>
-				</div>
-				<div><label>Infants:</label></div>
-				<div class="select">
-				  <select>
-				    <option value="" disabled selected>-</option>
-				    <option value="1">1 infant</option>
-				    <option value="2">2 infants</option>
-				    <option value="3">3 infants</option>
-				    <option value="4">4 infants</option>
-				    <option value="5">5 infants</option>
-				    <option value="6">6 infants</option>
-				    <option value="7">7 infants</option>
-				    <option value="8">8 infants</option>
-				  </select>
-				</div>
-				<button class="btn-big" type="submit">Book now!</button>
-			</form>
 		</aside>
 		
-		<div id="map">
+		<div id="map" class="tab-content tc-3">
 		</div>
 		
 	</div>
@@ -452,9 +461,7 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
     <script src="js/owl.carousel.min.js"></script>
     <!-- <script src="js/app.js"></script> -->
     <script>
-    	
-	    
-		
+    			
 		$( document ).ready(function() {
 			
 			$().ready(function (e) {
@@ -499,6 +506,31 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 		
 	    	$("aside .body").css("height", $(".slick-list").height());
 	    	console.log( $(".slick-list").height() );
+	    	
+	    	$(".tab-nav li").click(function(){
+		    	$(this).siblings().removeClass("active");
+		    	$(this).addClass("active");
+	    	})
+	    	$(".t1").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-1").addClass("active");
+		    	
+	    	})
+	    	$(".t2").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-2").addClass("active");
+		    	
+	    	})
+	    	$(".t3").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-3").addClass("active");
+		    	
+	    	})
+	    	$(".t4").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-4").addClass("active");
+		    	
+	    	})
     	});
 		
     </script
