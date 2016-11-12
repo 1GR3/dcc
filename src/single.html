@@ -211,7 +211,7 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 				<span class="">£690-£710</span>
 			</div>
 			
-			<div class="summary">
+			<div class="summary tab-content tc-1 active">
 				<h2>Property Summary</h2>
 				<ul>
 					<li>Detached Single Storey Cottage</li>
@@ -225,7 +225,7 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 					<li>Short breaks - All Year</li>
 				</ul>
 			</div>
-			<div class="description tab-content tc-4">
+			<div class="tab-content tc-4">
 				<div id="calendar">
 					  <header>
 					    <button class="btn-round">«</button>
@@ -503,9 +503,19 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 			        }
 			    });
 			});
+			
+			/*
+$(window).resize(function(){
+				if ($(window).width() <= 768){	
+					$(".slick-dots").css("height":"2px");
+				}	
+			});
+*/
 		
-	    	$("aside .body").css("height", $(".slick-list").height());
+	    	/*
+$("aside .body").css("height", $(".slick-list").height());
 	    	console.log( $(".slick-list").height() );
+*/
 	    	
 	    	$(".tab-nav li").click(function(){
 		    	$(this).siblings().removeClass("active");

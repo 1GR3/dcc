@@ -166,3 +166,16 @@
   &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
   &:nth-child(#{$nth}+1) { clear: none }
 }
+
+@mixin block-padding() {
+	padding-left: 20px;
+	padding-right: 20px;
+	@include media($tablet) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@include media($mobile) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
