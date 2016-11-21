@@ -102,8 +102,11 @@
 				@include block-padding();
 				line-height: 36px;
 				height: 657px;
-				@include media($tablet) {
+				@include media($laptop) {
 					font-size: 16px;
+				}
+				@include media($tablet) {
+					font-size: 24px;
 					font-weight: 300;
 					background: white;
 					color: $color-primary;
