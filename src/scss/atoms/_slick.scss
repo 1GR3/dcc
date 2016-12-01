@@ -17,16 +17,25 @@
     border: none;
     outline: none;
     background: transparent;
+    &:hover{
+	    color: white;
+    }
 }
-.slick-prev:before {
-	content: "<";
-	color: white;
-	font-size: 40px;
+.slick-prev {
+	float: left;
+	&:before {
+		content: "<";
+		color: white;
+		font-size: 40px;
+	}
 }
-.slick-next:before {
-	content: ">";
-	color: white;
-	font-size: 40px;
+.slick-next{
+	float: right;
+	&:before {
+		content: ">";
+		color: white;
+		font-size: 40px;
+	}
 }
 
 
@@ -63,6 +72,8 @@ ul.slickslide {
     line-height:0;
     background: $dark-grey;
     width: 100%;
+    height: 90px;
+    overflow: hidden;
     list-style-type: none;
     padding: 0;
 	li {

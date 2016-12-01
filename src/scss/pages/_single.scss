@@ -61,8 +61,26 @@
 		article {
 			@include span-columns(8);
 			@include pad();
-			@include media($tablet) {
+			@include media($laptop) {
+				@include span-columns(9);
+			}
+			@include media($tablet_l) {
 				@include span-columns(12);
+			}
+			@include media($tablet) {
+				.header {
+					margin-bottom: -120px;
+				    position: relative;
+				    z-index: 200;
+				    h1 {
+				    	margin: 0 50px;
+				    	color: white;
+				    }
+					.location {
+						color: $color-primary;
+						font-size: 20px;
+					}
+				}
 			}
 			float: left;
 			padding: 0;
@@ -82,8 +100,10 @@
 			@include span-columns(4);
 			@include pad();
 			@include omega();
-			
-			@include media($tablet) {
+			@include media($laptop) {
+				@include span-columns(3);
+			}
+			@include media($tablet_l) {
 				@include span-columns(12);
 			}
 			
@@ -105,7 +125,16 @@
 				@include media($laptop) {
 					font-size: 16px;
 				}
+				@include media($tablet_l) {
+					column-count: 2;
+					font-size: 24px;
+					font-weight: 300;
+					background: white;
+					color: $color-primary;
+					height: 310px;
+				}
 				@include media($tablet) {
+					column-count: 1;
 					font-size: 24px;
 					font-weight: 300;
 					background: white;
@@ -146,7 +175,12 @@
 						font-size: 24px;
 					}
 				}
-				@include media($tablet) {
+				@include media($laptop) {
+					ul li {
+						font-size: 20px;
+					}
+				}
+				@include media($tablet_l) {
 					ul li {
 						font-size: 16px;
 					}
@@ -189,6 +223,7 @@
 			      font-family: 'PT Sans', sans-serif;
 			      font-size: 13px;
 			      width: 100%;
+			      border-bottom: 2px solid $color-primary;
 			      thead td {
 				      background: white;
 				      font-weight: 400;
@@ -208,44 +243,64 @@
 					      border: 0;
 					   }
 					  &.nc {
-						  
+						  color: #CCC;
 					  }
 				   }
 				   
 			    }
+			    @include media($laptop) {
+				    table {
+						td {
+							font-size: 14px;
+							line-height: 18px;
+						}
+					}
+				}
 			}
 			.book {
-				border-top: 2px solid $color-primary;
 				margin-bottom: 20px;
 				padding: 25px;
-				div{
+				&>div{
 					width: 25%;
 					display: inline-block;
 					clear: none;
-					@include block-padding();
+					padding-right: 10px;
+					
 					&.double {
 						//@include span-columns(6 of 12);
 						width: 50% !important;
-						
+						margin: 0 0 10px 0;
+						&.select {
+							margin: 10px 0 0 0;
+						}
 					}
-				}
-				label {
-					
-					font-weight: 300;
-					font-size: 24px;
-					line-height: 28px;
-					strong {
-						font-family: $font-family-serif;
-						font-weight: 400;
+					&.last {
+						@include omega();
+						padding-right: 0;
 					}
 					
-				}
-				.select {
-					//@include span-columns(3 of 12);
+					label {
+						font-weight: 300;
+						font-size: 24px;
+						line-height: 28px;
+						vertical-align: super;
+						margin: 15px 0 0 0;
+						strong {
+							font-family: $font-family-serif;
+							font-weight: 400;
+						}
+						@include media($laptop) {
+							font-size: 16px;
+						}
+					}
+					.select {
+						//@include span-columns(3 of 12);
+						width: 100%;
+					}
 					
 				}
-				.last {
-					@include omega();
+				button {
+					margin-top: 10px;
 				}
 			}
 		}

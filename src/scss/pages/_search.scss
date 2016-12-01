@@ -6,17 +6,33 @@
 		width: 100%;
 		overflow: hidden; 
 		aside {
-			@include span-columns(4);
+			@include span-columns(3);
+			@include media($laptop) {
+				@include span-columns(4);
+			}
+			@include media($tablet) {
+				@include span-columns(12 of 12);
+			}
 			background: #EEEEEE;
 			padding: 15px;
 			margin-bottom: -5000px; /* any large number will do */
 			padding-bottom: 5000px; 
 			form[name="side-search"] {
 				input[type="text"], input[type="number"], .btn-submit {width: 100%;}
+				@include media($tablet) {
+					padding-bottom: 20px;
+				}
 			}
 		}
 		#results {
-			@include span-columns(8);
+			@include span-columns(9);
+			@include media($laptop) {
+				@include span-columns(8);
+			}
+			@include media($tablet) {
+				@include span-columns(8 of 8);
+			}
+			
 			float: left;
 			#map {
 				width: 100%;
@@ -29,7 +45,7 @@
 				overflow: hidden;
 				margin-top: 20px;
 				article {
-					@include span-columns(4 of 8);
+					
 					font-family: "Roboto Slab";
 					color: white;
 					height: 340px;
@@ -89,9 +105,60 @@
 					&.coastal {
 						background: $blue;
 					}
-					&:nth-child(2n){
-						@include omega();
+					@include media($imac) {
+						@include span-columns(3 of 9);
+						&:nth-child(3n){
+							@include omega();
+						}
 					}
+					@include media($fullhd) {
+						@include span-columns(4 of 8);
+						&:nth-child(2n){
+							@include omega();
+						}
+					}
+					/*
+@include media($laptop) {
+						@include span-columns(4 of 8);
+						&:nth-child(2n){
+							@include omega();
+						}
+						height: 280px;
+						.pictures {
+							height: 240px;
+						}
+						.main-info {
+							margin-top: -255px;
+							height: 255px;
+							h2 {margin: 150px 0 0;}
+						}
+					}
+*/
+					@include media($laptop) {
+						@include span-columns(8 of 8);
+						height: 340px;
+						.pictures {
+							height: 300px;
+						}
+						.main-info {
+							margin-top: -300px;
+							height: 300px;
+							h2 {margin: 180px 0 0;}
+						}
+					}
+					@include media($mobile) {
+						@include span-columns(12 of 12);
+						height: 310px;
+						.pictures {
+							height: 270px;
+						}
+						.main-info {
+							margin-top: -270px;
+							height: 270px;
+							h2 {margin: 160px 0 0;}
+						}
+					}
+					
 				}
 			}
 		}

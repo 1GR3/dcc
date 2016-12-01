@@ -7,6 +7,11 @@ $grid-columns: 12;
 $max-width: 1440px;
 
 // Define your breakpoints
-$laptop: new-breakpoint(max-width 1280px 12);
-$tablet: new-breakpoint(max-width  768px 12);
-$mobile: new-breakpoint(max-width  480px 12);
+$imac: 	new-breakpoint(min-width 1920px 12);
+$fullhd: 	new-breakpoint(max-width 1920px 12);
+$desktop: 	new-breakpoint(max-width 1600px 12);
+$laptop: 	new-breakpoint(max-width 1280px 12);
+$tablet-l: 	new-breakpoint(max-width 1024px 12);
+$tablet: 	new-breakpoint(max-width  768px 12);
+$mobile: 	new-breakpoint(max-width  480px 12);
+

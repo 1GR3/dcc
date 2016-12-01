@@ -77,8 +77,8 @@
 				  		<span class="line"></span>
 				  		<span class="line"></span>
 			  		</span>
+			  		<button type="button" class="btn-transparent">Let your Property!</button>
 			  		<ul>
-			  			<li><button type="button" class="btn-transparent">Let your Property!</button></li>
 			  			<li><a href="#">News</a></li>
 			  			<li><a href="#">What to do?</a></li>
 			  			<li><a href="#">Holiday Areas</a></li>
@@ -308,7 +308,7 @@
 		    	<div class="newsletter">
 					<span>Subscribe to the newsletter: </span>
 					<form>
-						<input>
+						<input type="email">
 						<button type="submit" class="btn-submit">submit</button>
 					</form>
 		    	</div>
@@ -328,6 +328,12 @@
 			  transitionStyle : "fadeUp"
 			});
 		    
+		    $(".menu-icon").click(function(){
+			    $(".main-nav ul").toggleClass("open");
+		    });
+		    $(".main-nav ul").click(function(){
+			    $(this).toggleClass("open");
+		    });
 		});
     </script
     <!-- Google Analytics -->
