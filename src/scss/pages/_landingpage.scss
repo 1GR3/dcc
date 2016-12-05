@@ -1,4 +1,4 @@
-#landingpage {
+.page-template-page-home {
 	#icons {
 		width: 100%;
 		float: left;
@@ -13,11 +13,11 @@
 			background-size: cover;
 		}
 		&:before {
-			background: url("../img/watercolor-blue.jpg") center no-repeat;
+			background: url("img/watercolor-blue.jpg") center no-repeat;
 			background-size: cover;
 		}
 		&:after {
-			background: url("../img/watercolor-green.jpg") center no-repeat;
+			background: url("img/watercolor-green.jpg") center no-repeat;
 			background-size: cover;
 		}
 		
@@ -91,31 +91,31 @@
 			
 			
 			&:nth-child(1) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t1.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t1.jpg");
 			}
 			&:nth-child(2) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t2.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t2.jpg");
 			}
 			&:nth-child(3) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t3.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t3.jpg");
 			}
 			&:nth-child(4) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t4.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t4.jpg");
 			}
 			&:nth-child(5) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t5.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t5.jpg");
 			}
 			&:nth-child(6) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t6.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t6.jpg");
 			}
 			&:nth-child(7) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t7.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t7.jpg");
 			}
 			&:nth-child(8) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t8.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t8.jpg");
 			}
 			&:nth-child(9) {
-				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/t9.jpg");
+				background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/t9.jpg");
 			}
 			&:nth-child(3n+0) {
 				@include omega();
@@ -149,7 +149,7 @@
 		}
 	}
 	#news {
-	width: 100%;
+		width: 100%;
 		background: white;
 		position: relative;
 		z-index: 1;
@@ -203,20 +203,31 @@
 			@include outer-container;
 			article {
 				@include span-columns(4);
-				h5 {
-					@include span-columns(4 of 4);
-					font-size: 20px;
-					color: $green;
+				a.thumbnail {
+					height: 200px;
+					background-size: cover;
+				    background-position: center;
+					padding: 10px;
+					display: block;
+					margin-bottom: 10px;
+					h5 {
+						font-size: 20px;
+						font-weight: 300;
+						color: white;
+						text-shadow: 0px 1px 2px rgba(0,0,0,0.25), 	0px 0px 8px rgba(0,0,0,0.5);
+						margin: 0;
+						position: relative;
+					    top: 100%;
+					    transform: translateY(-100%);
+					    display: block;
+					}
 				}
 				p {
-					@include span-columns(3 of 4);
+					
 					margin-top: 0;
 				}
-				img {
-					@include span-columns(1 of 4);
-				}
+				
 				.date {
-					@include span-columns(3 of 4);
 					font-family: $font-family-serif;
 					font-weight: bold;
 					font-size: 12px;

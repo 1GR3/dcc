@@ -56,26 +56,32 @@ body>footer {
 		&.social {
 			@include span-columns(4);
 			@include omega();
+			text-align: right;
+			.btn {float: right; text-align: center; }
+			ul {
+				padding-left: 0;
+				clear: both;
+				li {
+					display: inline-block;
+				}
+			}
 			@include media($laptop) {
+				
 				@include span-columns(10 of 12);
 				@include shift(1);
 				border-bottom: 2px solid white;
 				.btn {
 					@include span-columns(5 of 10);
 					@include shift(0);
-					float: left !important;
+					float: right;
 					clear: none;
-				}
-				h3 {
-					margin: 100px 0 0;
 				}
 				ul {
 					text-align: center;
-					clear: both;
 					@include span-columns(5 of 10);
 					@include shift(0);
 					float: left;
-					clear: both;
+					clear: none;
 					margin: 25px 0;
 					li {
 						margin: 0 10px;
@@ -83,15 +89,12 @@ body>footer {
 					}
 				}
 			}
-			@include media($mobile) {
+			@include media($tablet) {
 				@include span-columns(10 of 12);
 				@include shift(1);
 				border-bottom: 2px solid white;
 				.btn {
 					width: 100%;
-				}
-				h3 {
-					margin: 100px 0 0;
 				}
 				ul {
 					text-align: center;
@@ -103,14 +106,7 @@ body>footer {
 					}
 				}
 			}
-			.btn {float: right; text-align: center;}
-			text-align: right;
-			ul {
-				padding-left: 0;
-				li {
-					display: inline-block;
-				}
-			}
+			
 		}
 	}
 	.background-dark {
@@ -119,7 +115,8 @@ body>footer {
 		margin-top: 20px;
 		.info {
 			@include span-columns(7);
-			
+			font-size: 14px;
+			line-height: 20px;
 			@include media($tablet) {
 				@include span-columns(10 of 12);
 				@include shift(1);

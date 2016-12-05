@@ -7,7 +7,7 @@
 // that can’t be broken down any further without ceasing to be functional.
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
-input, .select, button {
+input, .select, button, a.btn-transparent {
 	display: inline-block;
 	height: 36px;
 }	

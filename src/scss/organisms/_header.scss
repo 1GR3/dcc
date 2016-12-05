@@ -41,6 +41,11 @@ body {
 							display: block;
 							margin-top: 40px;
 						}
+						a.btn-transparent {
+							display: block;
+							margin: 40px 10px 0 0;
+							float: left;
+						}
 						ul { position: absolute }
 					}
 				}
@@ -66,7 +71,7 @@ body {
 							border-radius: 4px;		
 						}
 					} 
-					&.main-nav button {	display: none; }
+					&.main-nav button, &.main-nav a.btn-transparent {	display: none; }
 					&.main-nav ul {
 						display: none;
 					    
@@ -123,7 +128,7 @@ body {
 				&.main-nav {
 					float: left;
 					margin-top: 14px;
-					button, ul {
+					button, a.btn-transparent, ul {
 						margin-right: 10px;
 						float: left;
 					}
@@ -216,7 +221,7 @@ body {
 		}
 	}
 		
-	&#landingpage {
+	&.page-template-page-home {
 		&>header {
 			//background: $color-primary center 70% no-repeat;
 			background-image: linear-gradient(to bottom, rgba(#000, 0.5), rgba(#000, 0.0), rgba(#000, 0));
@@ -310,13 +315,13 @@ body {
 					}	
 					
 					&:nth-child(1) {
-						background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/f1.jpg");
+						background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/f1.jpg");
 					}
 					&:nth-child(2) {
-						background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/f2.jpg");
+						background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/f2.jpg");
 					}
 					&:nth-child(3) {
-						background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("../img/f3.jpg");
+						background-image: linear-gradient(to bottom, rgba(#000, 0), rgba(#000, 0.0), rgba(#000, 0.65)), url("img/f3.jpg");
 						@include omega();
 					}
 					&:hover {
