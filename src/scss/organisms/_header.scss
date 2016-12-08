@@ -173,14 +173,17 @@ body {
 			}
 			img { 
 				float: left;
+				height: 30px;
+			    margin-top: 12px;
 				@include media($tablet) {
-					height: 30px;
+					height: 25px;
+					margin-top: 8px;
 				}
 				@include media($mobile) {
 					float: none;
 					clear: none;
 					margin: auto;
-					height:  25px; 
+					height:  20px; 
 					display: block;
 				}
 			}

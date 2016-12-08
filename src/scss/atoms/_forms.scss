@@ -34,7 +34,8 @@ input[type="date"], input[type="number"], input[type="text"], input[type="email"
 }
 input[type="checkbox"] {
 	appearance: none;	
-
+	height: 10px;
+	
 	& + label span {
 	    display:inline-block;
 	    width:16px;
@@ -69,11 +70,15 @@ input[type="checkbox"] {
 	    }
 	}
 }
+label {
+	display: block;
+	
+}
 .select {
-    width: 120px;
+    //width: 120px;
     border-radius: 0;
     overflow: hidden;
-    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    //background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
     background: white;
 	border: 1px solid $color-primary;
 	

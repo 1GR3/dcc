@@ -19,7 +19,32 @@
 			padding-bottom: 5000px; 
 			form[name="side-search"] {
 				input[type="text"], input[type="number"], .btn-submit {width: 100%;}
+				@include media($fullhd) {
+					input[type="data"], .select {
+						@include span-columns(4 of 12);
+					}
+					.select:nth-child(3n+2){
+							@include omega();
+					}
+					
+				}
+				@include media($desktop) {
+					input[type="data"], .select {
+						@include span-columns(6 of 12);
+					}
+					.select:nth-child(2n+2){
+							@include omega();
+					}
+				}
+				@include media($laptop) {
+					input[type="data"], .select {@include span-columns(4 of 4);}
+				}
 				@include media($tablet) {
+					input[type="data"], .select {@include span-columns(4 of 12);}
+					padding-bottom: 25px;
+				}
+				@include media($mobile) {
+					input[type="data"], .select {@include span-columns(6 of 12);}
 					padding-bottom: 20px;
 				}
 			}
