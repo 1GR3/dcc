@@ -174,7 +174,7 @@ body {
 			img { 
 				float: left;
 				height: 30px;
-			    margin-top: 12px;
+			    margin-top: 10px;
 				@include media($tablet) {
 					height: 25px;
 					margin-top: 8px;
@@ -189,8 +189,8 @@ body {
 			}
 			strong { 
 				float: left;
-				margin: 2px 10px 15px;
-				font-size: 36px; 
+				margin: 5px 10px 10px;
+				font-size: 30px; 
 				font-family: $font-family-serif;
 				@include media($tablet) {
 					font-size: 24px;
@@ -202,6 +202,9 @@ body {
 				}
 			}
 			span { display: none }
+			a {
+				color: $white;
+			}
 		}
 		.book {
 			@include outer-container();

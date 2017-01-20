@@ -51,10 +51,10 @@
     
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
-    <link rel="stylesheet" href="style.css">
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body class="page-template-page-cottage-list">
   	
@@ -95,9 +95,11 @@
 			  	</nav>
 		  	</div>
 		  	<div class="brand">
-		  		<img src="/img/logo.svg">
-			  	<span>Welcome to</span>
-			  	<strong>Dorset Coastal Cottages</strong>
+		  		<a href="index.html">
+					<img src="/img/logo.svg">
+					<span>Welcome to</span>
+					<strong>Dorset Coastal Cottages</strong>
+				</a>
 		  	</div>
 		  	<div class="book">
 			  	<form name="book">
@@ -133,51 +135,247 @@
 	<div class="content">
 		<aside class="search">
 			<form name="side-search">
-				<input type="text" placeholder="Location / Cottage / Code">
-				<input type="text" placeholder="Location / Cottage / Code">
-				<input type="text" placeholder="Location / Cottage / Code">
-				<input type="text" placeholder="Location / Cottage / Code">
-				<input type="number" placeholder="Party size">
-				<button type="submit" class="btn-submit">Search</button>
-				<input type="checkbox" id="pets" value="pets" checked>
-				<label for="pets"><span></span>does not accept pets</label><br>
-				<input type="checkbox" id="pub" value="pub">
-				<label for="pub"><span></span>close to pub</label><br>
-				<input type="checkbox" id="wifi" value="wifi">
-				<label for="wifi"><span></span>internet / WiFi</label><br>
-				<input type="checkbox" id="fire" value="fire">
-				<label for="fire"><span></span>cottages with fire / log burner</label><br>
-				<input type="checkbox" id="cot" value="Bike">
-				<label for="cot"><span></span>cot / high chair available</label><br>
+				<fieldset class="refine">
+					<legend>refine your results:</legend>
+					<input class="form-control" placeholder="arrival date" name="fromDate" type="date">
+					<div class="select">
+						<select name="flexibility" id="flexibility">
+							<option value="">date flexibility</option>
+							<option value="0">This day only</option>
+							<option value="1">1 day either side</option>
+							<option value="2">2 days either side</option>
+							<option value="3">3 days either side</option>
+							<option value="4">4 days either side</option>
+							<option value="5">5 days either side</option>
+							<option value="6">6 days either side</option>
+							<option value="7">7 days either side</option>
+							<option value="14">14 days either side</option>
+							<option value="21">21 days either side</option>
+						</select>
+					</div>
+					<div class="select">
+						<select name="nights" id="nights">
+							<option value="">how many nights</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="14">14</option>
+							<option value="21">21</option>
+						</select>
+					</div>
+					<div class="select">
+						<select id="area" name="area" class="selectbox dropdownfilter" data-target-id="location">
+							<option value="">all areas</option>
+							<option value="BRID">Bridport</option>
+							<option value="LUL">Lulworth</option>
+							<option value="LYREG">Lyme Regis</option>
+							<option value="SWAN">Swanage &amp; Purbeck</option>
+							<option value="WEYDO">Weymouth/Dorchester</option>
+						</select>
+					</div>
+					<div class="select">
+						<select id="location" name="location" class="selectbox">
+							<option value="">all  locations</option>
+							<option value="ACTON">Acton</option>
+							<option value="AFFPU">Affpuddle</option>
+							<option value="ARNE">Arne</option>
+							<option value="ASK">Askerswell</option>
+							<option value="BEAM">Beaminster</option>
+							<option value="BOTH">Bothenhampton</option>
+							<option value="BRIAN">Briantspuddle</option>
+							<option value="BROAD">Broadmayne</option>
+							<option value="BRIP">Buckland Ripers</option>
+							<option value="BURTO">Burton Bradstock</option>
+							<option value="CHARM">Charminster</option>
+							<option value="CMOUT">Charmouth</option>
+							<option value="CHIDE">Chideock</option>
+							<option value="CKNOW">Church Knowle</option>
+							<option value="COOMB">Coombe Keynes</option>
+							<option value="CCAST">Corfe Castle</option>
+							<option value="CORY">Coryates</option>
+							<option value="CULZ">Culeaze</option>
+							<option value="CHALD">East Chaldon</option>
+							<option value="FLEET">East Fleet</option>
+							<option value="ESTOK">East Stoke</option>
+							<option value="EYPE">Eype</option>
+							<option value="FORT">Fortuneswell, Portland</option>
+							<option value="HAWK">Hawkchurch</option>
+							<option value="KIMM">Kimmeridge</option>
+							<option value="L HER">Langton Herring</option>
+							<option value="LANG">Langton Matravers</option>
+							<option value="WADD">Little Waddon</option>
+							<option value="LITTO">Litton Cheney</option>
+							<option value="LODER">Loders</option>
+							<option value="LULW">Lulworth Cove</option>
+							<option value="LREG">Lyme Regis</option>
+							<option value="MART">Martinstown</option>
+							<option value="MONK">Monkton Wylde</option>
+							<option value="NETH">Netherbury</option>
+							<option value="NOTT">Nottington</option>
+							<option value="OSMIN">Osmington</option>
+							<option value="PORT">Portesham</option>
+							<option value="POWER">Powerstock</option>
+							<option value="PUNCK">Puncknowle</option>
+							<option value="RING">Ringstead</option>
+							<option value="ROUSD">Rousdon</option>
+							<option value="SALWA">Salwayash</option>
+							<option value="SEAT">Seatown</option>
+							<option value="SHIPT">Shipton Gorge</option>
+							<option value="STOB">Stoborough</option>
+							<option value="STUDL">Studland</option>
+							<option value="SUTT">Sutton Poyntz</option>
+							<option value="SWAN">Swanage</option>
+							<option value="UPLDS">Uploders</option>
+							<option value="UPWEY">Upwey</option>
+							<option value="WALD">Walditch</option>
+							<option value="WAYT">Waytown</option>
+							<option value="WBAY">West Bay</option>
+							<option value="WB">West Burton</option>
+							<option value="HOLME">West Holme</option>
+							<option value="WKNIG">West Knighton</option>
+							<option value="MILTO">West Milton</option>
+							<option value="WSTAF">West Stafford</option>
+							<option value="WEY">Weymouth</option>
+							<option value="WHIT">Whitcombe</option>
+							<option value="WN">Winfrith Newburgh</option>
+							<option value="WOOL">Wool</option>
+							<option value="WORTH">Worth Matravers</option>
+						</select>
+					</div>
+					<div class="select">
+						<select id="accommodates" name="accommodates" class="selectbox">
+							<option value="">party size</option>
+							<option value=">1">1</option>
+							<option value=">2">2</option>
+							<option value=">3">3</option>
+							<option value=">4">4</option>
+							<option value=">5">5</option>
+							<option value=">6">6</option>
+							<option value=">7">7</option>
+							<option value=">8">8</option>
+							<option value=">9">9</option>
+							<option value=">10">10</option>
+							<option value=">11">11</option>
+							<option value=">12">12+</option>
+						</select>
+					</div>
+					<div class="select">
+						<select name="bedrooms" id="bedrooms" class="selectbox">
+							<option value="">bedrooms</option>
+							<option value=">1">1</option>
+							<option value=">2">2</option>
+							<option value=">3">3</option>
+							<option value=">4">4</option>
+							<option value=">5">5</option>
+							<option value=">6">6+</option>
+						</select>
+					</div>
+					<div class="select">
+						<select name="bathrooms" id="bathrooms" class="selectbox">
+							<option value="">bathrooms</option>
+							<option value=">1">1</option>
+							<option value=">2">2</option>
+							<option value=">3">3</option>
+							<option value=">4">4</option>
+							<option value=">5">5</option>
+							<option value=">6">6+</option>
+						</select>
+					</div>
+					<div class="select">
+						<select name="numPets" id="numPets" class="selectbox">
+							<option value="">pets</option>
+							<option value="1|2">1</option>
+							<option value="2">2</option>
+						</select>
+					</div>
+				</fieldset>
+				<fieldset class="filter">
+					<legend>further filter your search:</legend>
+					<input name="pets" id="pets" value="false" type="checkbox"> <label for="pets"><span></span>does not accept pets</label>
+					<input name="pub" id="pub" value="true" type="checkbox"> <label for="pub"><span></span>close to pub</label>
+					<input name="internet" id="internet" value="true" type="checkbox"> <label for="internet"><span></span>internet / WiFi</label>
+					<input name="fire" id="fire" value="true" type="checkbox"> <label for="fire"><span></span>cottages with fire / log burner</label>
+					<input name="cot" id="cot" value="true" type="checkbox"> <label for="cot"><span></span>cot / high chair available</label>
+					<input name="dishwasher" id="dishwasher" value="true" type="checkbox"> <label for="dishwasher"><span></span>dishwasher</label>
+					<input name="parking" id="parking" value="true" type="checkbox"> <label for="parking"><span></span>off-road parking</label>
+					<input name="seawalk" id="seawalk" value="true" type="checkbox"> <label for="seawalk"><span></span>walk to sea</label>
+					<input name="seaview" id="seaview" value="true" type="checkbox"> <label for="seaview"><span></span>sea views</label>
+					<input name="dstrsbath" id="dstrsbath" value="true" type="checkbox"> <label for="dstrsbath"><span></span>downstairs bathroom</label>
+					<input name="dstrsbed" id="dstrsbed" value="true" type="checkbox"> <label for="dstrsbed"><span></span>downstairs bedroom</label>
+				</fieldset>
+				<fieldset class="submit">
+					<button id="formBoxSubmit" class="btn-submit submit-form" data-target-form="search_property"><span></span>Search</button>
+				</fieldset>
 			</form>
 		</aside>
-	
 		<div id="results">
 			<div id="map">
+			</div>
+			<div class="page-filters">
+				<ul class="pagination">
+					<li><a title="" href="http://dcc.chillifish.com/cottages/1">First</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/1">Previous</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/1">1</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/2">2</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/3">3</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/4">4</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/5">5</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/6">6</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/7">7</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/8">8</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/9">9</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/10">10</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/11">11</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/12">12</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/2">Next</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/12">Last</a></li>
+				</ul>
+				<div class="group">
+					<p>Showing Cottage 1 to 20 of 221 / Show: <a title="" href="http://dcc.chillifish.com/cottages/?count=10">10</a> <a title="" href="http://dcc.chillifish.com/cottages/?count=50">50</a></p>
+					<div class="sort">
+						<p>Sort results by:<p> 
+						<div class="select">
+							<select class="sortmenu-select changeselect">
+								<option value="http://dcc.chillifish.com/cottages/?orderby=bedrooms_asc" selected="">Bedrooms Low - High</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=bedrooms_desc">Bedrooms High - Low</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=price_asc">Price Low - High</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=price_desc">Price High - Low</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=stars_asc">Star Rating Low - High</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=stars_desc">Star Rating High - Low</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=propname">Property Name</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=propref">Property Ref</option>
+							</select>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="articles">
 				<article>
 					<div class="pictures">
-					  <div><img src="/img/property1picture1.jpg"></div>
-					  <div><img src="/img/property1picture2.jpg"></div>
-					  <div><img src="/img/property1picture3.jpg"></div>
-					  <div><img src="/img/property1picture4.jpg"></div>
+						<div><img src="/img/property1picture1.jpg"></div>
+						<div><img src="/img/property1picture2.jpg"></div>
+						<div><img src="/img/property1picture3.jpg"></div>
+						<div><img src="/img/property1picture4.jpg"></div>
 					</div>
-					<div class="main-info">
-						<img src="img/logo.svg" class="property-type">
-						<button class="btn-round btn-favorite"><span class="icon-hearth"></span></button>
-						<h2>Cottage name</h2>
-						<span class="location">Cottage Location</span>
-						<div class="star-rating">
-							<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+					<a href="lkjsldkfs">
+						<div class="main-info">
+							<img src="img/logo.svg" class="property-type">
+							<button class="btn-round btn-favorite"><span class="icon-hearth"></span></button>
+							<h2>Cottage name</h2>
+							<span class="location">Cottage Location</span>
+							<div class="star-rating">
+								<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+							</div>
 						</div>
-					</div>
-					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
-						<span class="price">£690 - £710</span>
-					</div>
+						<div class="summary">
+							<span class="icon-person"></span><span>1</span>
+							<span class="icon-bed"></span><span>2</span>
+							<span class="icon-pet"></span><span>3</span>
+							<span class="price">£690 - £710</span>
+						</div>
+					</a>
 				</article>
 				<article>
 					<div class="pictures">
@@ -196,9 +394,9 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
@@ -219,9 +417,9 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
@@ -242,9 +440,9 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
@@ -265,9 +463,9 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
@@ -288,9 +486,9 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
@@ -311,9 +509,9 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
@@ -334,47 +532,51 @@
 						</div>
 					</div>
 					<div class="summary">
-						<span class="icon-person"></span><span>1</span>
-						<span class="icon-bed"></span><span>2</span>
-						<span class="icon-pet"></span><span>3</span>
+						<span class="icon-person"></span> <span>1</span>
+						<span class="icon-bed"></span> <span>2</span>
+						<span class="icon-pet"></span> <span>3</span>
 						<span class="price">£690 - £710</span>
 					</div>
 				</article>
-			</div>
-			
-			<div class="filters">
+			</div>			
+			<div class="page-filters">
 				<ul class="pagination">
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/1">First</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/1">Previous</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/1">1</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/2">2</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/3">3</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/4">4</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/5">5</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/6">6</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/7">7</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/8">8</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/9">9</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/10">10</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/11">11</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/12">12</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/2">Next</a></li>
-					<li><a title="" href="https://www.dorsetcoastalcottages.com/cottages/12">Last</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/1">First</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/1">Previous</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/1">1</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/2">2</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/3">3</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/4">4</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/5">5</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/6">6</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/7">7</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/8">8</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/9">9</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/10">10</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/11">11</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/12">12</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/2">Next</a></li>
+					<li><a title="" href="http://dcc.chillifish.com/cottages/12">Last</a></li>
 				</ul>
-				<p class="bold">Showing Cottage 1 to 20 of 222 / Show: <a title="" href="https://www.dorsetcoastalcottages.com/cottages/?count=10">10</a> <a title="" href="https://www.dorsetcoastalcottages.com/cottages/?count=50">50</a></p>
-				Sort results by: 
-				<select class="sortmenu-select changeselect">
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=bedrooms_asc" selected="">Bedrooms Low - High</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=bedrooms_desc">Bedrooms High - Low</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=price_asc">Price Low - High</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=price_desc">Price High - Low</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=stars_asc">Star Rating Low - High</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=stars_desc">Star Rating High - Low</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=propname">Property Name</option>
-					<option value="https://www.dorsetcoastalcottages.com/cottages/?orderby=propref">Property Ref</option>
-				</select>
+				<div class="group">
+					<p>Showing Cottage 1 to 20 of 221 / Show: <a title="" href="http://dcc.chillifish.com/cottages/?count=10">10</a> <a title="" href="http://dcc.chillifish.com/cottages/?count=50">50</a></p>
+					<div class="sort">
+						<p>Sort results by:<p> 
+						<div class="select">
+							<select class="sortmenu-select changeselect">
+								<option value="http://dcc.chillifish.com/cottages/?orderby=bedrooms_asc" selected="">Bedrooms Low - High</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=bedrooms_desc">Bedrooms High - Low</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=price_asc">Price Low - High</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=price_desc">Price High - Low</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=stars_asc">Star Rating Low - High</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=stars_desc">Star Rating High - Low</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=propname">Property Name</option>
+								<option value="http://dcc.chillifish.com/cottages/?orderby=propref">Property Ref</option>
+							</select>
+						</div>
+					</div>
+				</div>
 			</div>
-			
 		</div>
 	</div>
 	
@@ -467,19 +669,11 @@
 	    </div>
     </footer>
     <!-- SCRIPTS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- <script src="js/app.js"></script> -->
-    <script>
-    	$( document ).ready(function() {
-		    $('.pictures').slick({
-			    
-			});
-		    
-		});
-    </script
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- Google Analytics -->
 
   </body>

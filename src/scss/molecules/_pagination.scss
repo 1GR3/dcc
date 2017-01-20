@@ -1,4 +1,20 @@
-.filters {
+.sort {
+	margin-right: 10px;
+	
+	@include media($mobile) {
+		margin: 0;
+	}
+	
+	p {
+		margin-right: 5px;
+	}
+	p, .select {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.page-filters {
 	ul.pagination {
 		list-style-type: none;
 		padding-left: 0;
@@ -21,5 +37,36 @@
 		font-size: 16px;
 		font-weight: 400;
 	}
-	
+	.select {
+		p {
+			margin-left: 5px;
+		}
+		@include media($mobile) {
+			display: block;
+		}
+	}
+	p, .select {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.sort {
+		display: inline-block;
+	}
+	.group {
+		display: flex;
+		justify-content: space-between;
+		
+		@include media($mobile) {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		&> p {
+			margin-left: 10px;
+			
+			@include media($mobile) {
+				margin: 10px auto;
+			}
+		}
+	}
 }

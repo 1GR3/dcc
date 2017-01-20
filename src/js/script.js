@@ -23,12 +23,6 @@ $( document ).ready(function() {
 	    //setting-name: setting-value
 	});
 	
-
-	
-	
-	
-	
-	
 	// single property page //
 	
 	$().ready(function (e) {

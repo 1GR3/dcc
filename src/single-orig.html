@@ -3,14 +3,6 @@
 <!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
   <head>
-    <!--
-
-      Description:
-      Version:
-      Author:
-
-    //-->
-
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -49,26 +41,16 @@
 
     <!-- CSS, you gotta have style -->
     
-    <link rel="stylesheet" href="/css/owl.carousel.css">
-    <link rel="stylesheet" href="/css/owl.transitions.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
     <link rel="stylesheet" href="styles.css">
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    </head>
-  <body class="page-template-page-home">
-  	<div class="slider">
-  		<div class="slider-item"
-             style="background-image:url(/img/hero-1.jpg)">
-        </div>
-        <div class="slider-item"
-             style="background-image:url(/img/hero-2.jpg)">
-        </div>
-        <div class="slider-item"
-             style="background-image:url(/img/hero-3.jpg)">
-        </div>
-  	</div>
-	  <header class="landingpage">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  </head>
+  <body class="page-template-page-cottage-details">
+  
+	  <header class="singlepage">
 	  	<div class="wrapper">
 		  	<div class="navigation">
 			  	<nav class="main-nav">
@@ -93,21 +75,23 @@
 			  		</span>
 			  	</nav>
 			  	<nav class="personal-nav">
-			  		<ul class="logged-out">
+			  		<ul class="logged-out" style="display:none">
 			  			<li><a href="#">Log In</a></li>
 			  			<li><a href="#">Sign Up</a></li>
 			  		</ul>
-			  		<ul class="logged-in" style="display:none">
+			  		<ul class="logged-in">
 			  			<li><a href="#"><span class="icon-hearth"></span>7</a></li>
-			  			<li><a href="#"><span class="icon-hearth"></span>2</a></li>
+			  			<li><a href="#"><span class="icon-bell"></span>2</a></li>
 			  			<li><a href="#"><span class="img-holder">username</a></li>
 			  		</ul>
 			  	</nav>
 		  	</div>
 		  	<div class="brand">
-		  		<img src="/img/logo.svg">
-			  	<span>Welcome to</span>
-			  	<strong>Dorset Coastal Cottages</strong>
+				<a href="index.html">
+					<img src="/img/logo.svg">
+					<span>Welcome to</span>
+					<strong>Dorset Coastal Cottages</strong>
+				</a>
 		  	</div>
 		  	<div class="book">
 			  	<form name="book">
@@ -138,100 +122,254 @@
 			  	</form>
 		  	</div>
 		</div>
-	  	<div class="divider"></div>
-	  	<div class="offers">
-	  		<a>
-	  			<h3>Special Offers</h3>
-	  		</a>
-	  		<a>
-	  			<h3>Reserve for 2017 now!</h3>
-	  		</a>
-	  		<a>
-	  			<h3>See All Properties</h3>
-	  		</a>
-	  	</div>
 	</header>
-    <section id="icons">
-    	<div class="wrapper">
-	    	<div>
-	    		<img src="../img/visitengland.svg">
-	    		<p>Visit England Accredited Agency – all our cottages are inspected and have a minimum 3 stars.</p>
-	    	</div>
-	    	<div>
-	    		<img src="../img/feefo.svg">
-	    		<p>4074 customers rated us 97% on average. Read all the reviews on feefo.</p>
-	    	</div>
-	    	<div>
-	    		<img src="../img/ratings-icon.svg">
-	    		<p>All our cottages and locations are continually graded by our customers.</p>
-	    	</div>
-	    	<div>
-	    		<img src="../img/local-icon.svg">
-	    		<p>Our staff are local with detailed knowledge of every location and of every cottage.</p>
-	    	</div>
-    	</div>
-    </section>
-    <section id="themes">
-    	<a href="#">
-    		<div><h3>Cottages With Fire/Logburner</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Sea View Cottages</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Pet Friendly Cottages</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Large Cottages</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Romantic Cottages</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Luxury Cottages</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Thatched Cottages</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Seaside Resort Properties</h3></div>
-    	</a>
-    	<a href="#">
-    		<div><h3>Accessable Cottages</h3></div>
-    	</a>
-    </section>
-    <section id="news">
-    	<div class="wrapper">
-    		<div class="headline-holder">
-	    		<h4>Latest News</h4>
-    		</div>
-	    	<div class="articles">
-		    	<article >
-		    		<a href="#"  class="thumbnail" style="background-image: linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.65)), url(img/news-tmb-1.jpg);">
-		    			<h5>Dorset Walk #10 – West Bexington</h5>
-		    		</a>
-		    		<p>This walk will take you through some varying countryside and terrain which can be enjoyed by all the family. Taking in Chesil Beach and the pretty seaside village of West Bexington.</p>
-		    		<span class="date">on 27th May 2016</span>
-		    	</article>
-		    	<article>
-		    		<a href="#"  class="thumbnail" style="background-image: linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.65)), url(img/news-tmb-2.jpg);">
-		    			<h5>Dorset Ramblings</h5>
-		    		</a>
-		    		<p>This week Julie Croley from our Customer Services team is sharing with you some of her Dorset ramblings.</p>
-		    		<span class="date">on 26th May 2016</span>
-		    	</article>
-		    	<article>
-		    		<a href="#"  class="thumbnail" style="background-image: linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.65)), url(img/news-tmb-3.jpg);">
-		    			<h5>Bucket List Dorset – Part 2</h5>
-		    		</a>
-		    		<p>Rural Dorset Bucket List - inland from the sea a bit there are many walks, historical sites, literary links and other attractions and surely there will be something for all to enjoy.</p>
-		    		<span class="date">on 23th May 2016</span>
-		    	</article>
-	    	</div>
-    	</div>
-    </section>
-    <footer>
-    	<div class="divider"></div>
+	
+	<div class="content">
+		<article>
+			<div class="header">
+				<!-- <img src="img/logo.svg" class="loc-type"> -->
+				<h1>Cottage name</h1>
+				<span class="location">Location Name</span>
+				<div class="star-rating"></div>
+			</div>
+			<ul class="slickslide">
+		        <li><img src="/img/property1picture1.jpg"></li>
+		        <li><img src="/img/property1picture2.jpg"></li>
+			    <li><img src="/img/property1picture3.jpg"></li>
+			    <li><img src="/img/property1picture4.jpg"></li>
+		    </ul>
+		    <div class="slick-thumbs">
+		        <ul>
+		            <li><img src="/img/property1picture1.jpg"></li>
+			        <li><img src="/img/property1picture2.jpg"></li>
+				    <li><img src="/img/property1picture3.jpg"></li>
+				    <li><img src="/img/property1picture4.jpg"></li>
+		        </ul>
+		    </div>
+		    <ul class="tab-nav">
+		    	<li class="t1 active">summary</li>
+		    	<li class="t2">description</li>
+		    	<li class="t3">map</li>
+		    	<li class="t4 booking">booking</li>
+		    </ul>
+		    <div class="description tab-content tc-2">
+		    	<h2>Property Description</h2>
+		    	<p>Located on an exclusive estate, this 19th Century former kennel for working dogs, is Grade II Star listed and is located within the owner's gravelled courtyard. It offers spacious accommodation with a high level of comfort in peaceful and tranquil surroundings.  All on one level with a high to low sloping ceiling running the length of the building. The secluded garden is reached via a gate across the courtyard and is laid to lawn with terraced area, original flint wall, trellis, shrubs and climbers.<br>
+Parking for 1 car.</p>
+
+				<p>Shop 4 miles. 2 Hotels 0.75 miles & 3 miles.
+				All on one level with oak floors throughout. From Entrance door step up to the beamed, open plan Kitchen/Sitting/Dining Room with well defined areas, oak worktops, dishwasher, space for coats and boots (no washing machine); Hall with door to courtyard; beamed Double Bedroom; Shower Bathroom.</p>
+				
+				<p>Central heating. No telephone. Wireless Broadband (email and web browsing only).<br>
+				Rousdon Estate has a private beach for guests to use, Click Here to view a detailed description of how to access the beach.
+				Please see our  help and information page for standard facilities found in all our cottages.</p>
+				<h2>Short breaks</h2>
+				<p>Short breaks are welcomed at this property all year round, but is subject to peak time restrictions*.
+For a 3 night short break save 30% off a week's price. Mon–Fri breaks are offered at 4 nights for the price of 3.
+(4 nights are priced at 76.7%, 5 at 85% and 6 at 95% of the weeks price)</p>
+				<p><small>*A short break during peak times may only be booked within 2 weeks of the required dates. Peak times are: June to September, October and end of May half terms, Christmas, New Year and Easter.
+For more information please visit our Dorset Short Breaks Information Page.</small></p>
+		    </div>
+		</article>
+		<aside class="">
+			<div class="header mobile-hidden">
+				<button class="btn-favorite btn-round"><span class="icon-hearth"></span></button>
+			</div>
+			<div class="body tab-content tc-1 active">
+				<div class="star-rating">
+					<span class="icon-ve"></span><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+				</div>
+				<div class="star-rating">
+					<span class="icon-cottage"></span><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+				</div>
+				<div class="star-rating">
+					<span class="icon-butterfly"></span><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+				</div>
+				<span class="icon-person"></span><span>number of guests</span> 4<br>
+				<span class="icon-bath"></span><span>number of bathrooms</span> 5<br>
+				<span class="icon-pet"></span><span>number of pet</span> 2<br>
+				<span class="icon-hottub"></span><span>pool/hot tub</span><br>
+				<span class="icon-babycart"></span><span>accept kids of all ages</span><br>
+				<span class="icon-cot"></span><span>cot/high chair available</span><br>
+				<span class="icon-pub"></span><span>close to pub</span><br>
+				<span class="icon-dishwasher"></span><span>dishwasher</span><br>
+				<span class="icon-wifi"></span><span>internet / WiFi</span><br>
+				<span class="icon-parking"></span><span>off-road parking</span><br>
+				<span class="icon-fire"></span><span>open fire / log burner</span><br>
+				<span class="icon-walk"></span><span>walk to sea</span><br>
+				<span class="icon-access"></span><span>accessibility</span><br>
+				
+			</div>
+			<div class="price mobile-hidden">
+				Weekly price:
+				<span class="">£690-£710</span>
+			</div>
+			
+			<div class="summary tab-content tc-1 active">
+				<h2>Property Summary</h2>
+				<ul>
+					<li>Detached Single Storey Cottage</li>
+					<li>On 350 acre Private Estate</li>
+					<li>Estate Beach 1 mile</li>
+					<li>Lyme Regis 3 miles</li>
+					<li>Adults Only</li>
+					<li>Dogs Not Permitted<br>
+					<small>(Small dog permitted from 13th Aug 2016)</small></li>
+					<li>No Smoking</li>
+					<li>Short breaks - All Year</li>
+				</ul>
+			</div>
+			<div class="tab-content tc-4">
+				<div id="calendar">
+					  <header>
+					    <button class="btn-round">«</button>
+					    <h2>SEPTEMBER 2016</h2>
+					    <button class="btn-round">»</button>
+					  </header>
+					<table>
+						<thead>
+						  <tr>
+						    <td>SUN</td>
+						    <td>MON</td>
+						    <td>TUE</td>
+						    <td>WED</td>
+						    <td>THU</td>
+						    <td>FRI</td>
+						    <td>SAT</td>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+						    <td class="nc">29</td>
+						    <td class="nc">31</td>
+						    <td>1</td>
+						    <td>2</td>
+						    <td>3</td>
+						    <td>4</td>
+						    <td>5</td>
+						  </tr>
+						  <tr>
+						    <td>6</td>
+						    <td>7</td>
+						    <td>8</td>
+						    <td>9</td>
+						    <td>10</td>
+						    <td>11</td>
+						    <td>12</td>
+						  </tr>
+						  <tr>
+						    <td>13</td>
+						    <td>14</td>
+						    <td>15</td>
+						    <td>16</td>
+						    <td class="selected">17</td>
+						    <td>18</td>
+						    <td>19</td>
+						  </tr>
+						  <tr>
+						    <td>20</td>
+						    <td>21</td>
+						    <td>22</td>
+						    <td>23</td>
+						    <td>24</td>
+						    <td>25</td>
+						    <td>26</td>
+						  </tr>
+						  <tr>
+						    <td>27</td>
+						    <td>28</td>
+						    <td>29</td>
+						    <td>30</td>
+						    <td class="nc">1</td>
+						    <td class="nc">2</td>
+						    <td class="nc">3</td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				<form class="book">
+					<div class="double"><label><strong>Nights to stay</strong></label></div>
+					<div class="double last">
+						<div class="select ">
+						  <select>
+						    <option value="" disabled selected>Duration</option>
+						    <option value="2">2 nigts</option>
+						    <option value="3">3 nigts</option>
+						    <option value="4">4 nigts</option>
+						    <option value="5">5 nigts</option>
+						    <option value="6">6 nigts</option>
+						    <option value="7">7 nigts</option>
+						    <option value="8">8 nigts</option>
+						    <option value="9">9 nigts</option>
+						    <option value="10">10 nigts</option>
+						    <option value="11">11 nigts</option>
+						    <option value="12">12 nigts</option>
+						    <option value="13">13 nigts</option>
+						    <option value="14">14 nigts</option>
+						  </select>
+						</div>
+					</div><br>
+					<div class="double"><label><strong>Number of guests</strong></label></div>
+					<div><label> Adults:</label></div>
+					<div class="last">
+						<div class="select">
+						  <select>
+						    <option value="" disabled selected>-</option>
+						    <option value="1">1 guest</option>
+						    <option value="2">2 guests</option>
+						    <option value="3">3 guests</option>
+						    <option value="4">4 guests</option>
+						    <option value="5">5 guests</option>
+						    <option value="6">6 guests</option>
+						    <option value="7">7 guests</option>
+						    <option value="8">8 guests</option>
+						  </select>
+						</div>
+					</div><br>
+					<div><label>Children:</label></div>
+					<div>
+						<div class="select">
+						  <select>
+						    <option value="" disabled selected>-</option>
+						    <option value="1">1 child</option>
+						    <option value="2">2 children</option>
+						    <option value="3">3 children</option>
+						    <option value="4">4 children</option>
+						    <option value="5">5 children</option>
+						    <option value="6">6 children</option>
+						    <option value="7">7 children</option>
+						    <option value="8">8 children</option>
+						  </select>
+						</div>
+					</div>
+					<div><label>Infants:</label></div>
+					<div class="last">
+						<div class="select">
+						  <select>
+						    <option value="" disabled selected>-</option>
+						    <option value="1">1 infant</option>
+						    <option value="2">2 infants</option>
+						    <option value="3">3 infants</option>
+						    <option value="4">4 infants</option>
+						    <option value="5">5 infants</option>
+						    <option value="6">6 infants</option>
+						    <option value="7">7 infants</option>
+						    <option value="8">8 infants</option>
+						  </select>
+						</div>
+					</div>
+					<button class="btn-big" type="submit">Book now!</button>
+				</form>
+			</div>
+		</aside>
+		
+		<div id="map" class="tab-content tc-3">
+		</div>
+		
+	</div>
+	
+	<footer>
+	  <div class="divider"></div>
     	<div class="wrapper">
 		    <nav>
 		    	<h6>About Dorset Coastal Cottages</h6>
@@ -320,24 +458,118 @@
     </footer>
     <!-- SCRIPTS -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <!-- <script src="js/app.js"></script> -->
     <script>
-    	$( document ).ready(function() {
-		    $('.slider').owlCarousel( {
-			  autoPlay: true,
-			  paginationSpeed : 6000,
-			  singleItem: true,
-			  transitionStyle : "fadeUp"
+    			
+		$( document ).ready(function() {
+			
+			$().ready(function (e) {
+			    $('.slickslide').slick({
+			        dots: true,
+			        infinite: true,
+			        speed: 500,
+			        fade: false,
+			        slide: 'li',
+			        cssEase: 'linear',
+			        centerMode: true,
+			        slidesToShow: 1,
+			        variableWidth: true,
+			        autoplay: true,
+			        autoplaySpeed: 4000,
+			        responsive: [{
+			            breakpoint: 800,
+			            settings: {
+			                arrows: false,
+			                centerMode: false,
+			                centerPadding: '40px',
+			                variableWidth: false,
+			                slidesToShow: 1,
+			                dots: true
+			            },
+			            breakpoint: 1024,
+			            settings: {
+			                arrows: false,
+			                centerMode: false,
+			                centerPadding: '40px',
+			                variableWidth: false,
+			                slidesToShow: 1,
+			                dots: true
+			
+			            }
+			        }],
+			        customPaging: function (slider, i) {
+			            return '<button class="tab">' + $('.slick-thumbs li:nth-child(' + (i + 1) + ')').html() + '</button>';
+			        }
+			    });
 			});
-		    
-		    $(".menu-icon").click(function(){
-			    $(".main-nav ul").toggleClass("open");
+			
+			/*
+$(window).resize(function(){
+				if ($(window).width() <= 768){	
+					$(".slick-dots").css("height":"2px");
+				}	
+			});
+*/
+		
+	    	/*
+$("aside .body").css("height", $(".slick-list").height());
+	    	console.log( $(".slick-list").height() );
+*/
+	    	
+	    	$(".tab-nav li").click(function(){
+		    	$(this).siblings().removeClass("active");
+		    	$(this).addClass("active");
+	    	})
+	    	$(".t1").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-1").addClass("active");
+		    	
+	    	})
+	    	$(".t2").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-2").addClass("active");
+		    	
+	    	})
+	    	$(".t3").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-3").addClass("active");
+		    	
+	    	})
+	    	$(".t4").click(function(){
+	    		$(".tab-content").removeClass("active");
+		    	$(".tc-4").addClass("active");
+		    	
+	    	})
+	    	
+	    	/*
+$('img[src$=".svg"]').each(function() {
+		        var $img = jQuery(this);
+		        var imgURL = $img.attr('src');
+		        var attributes = $img.prop("attributes");
+		
+		        $.get(imgURL, function(data) {
+		            // Get the SVG tag, ignore the rest
+		            var $svg = jQuery(data).find('svg');
+		
+		            // Remove any invalid XML tags
+		            $svg = $svg.removeAttr('xmlns:a');
+		
+		            // Loop through IMG attributes and apply on SVG
+		            $.each(attributes, function() {
+		                $svg.attr(this.name, this.value);
+		            });
+		
+		            // Replace IMG with SVG
+		            $img.replaceWith($svg);
+		        }, 'xml');
 		    });
-		    $(".main-nav ul").click(function(){
-			    $(this).toggleClass("open");
-		    });
-		});
+*/
+	    	
+    	});
+		
     </script
     <!-- Google Analytics -->
 

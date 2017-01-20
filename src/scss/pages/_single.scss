@@ -47,6 +47,13 @@
 		}
 	}
 	
+	header {
+		.brand {
+			a {
+				color: $white;
+			}
+		}
+	}
 
 	.content {
 		@include outer-container;
@@ -89,6 +96,7 @@
 			padding: 0;
 			.header {
 				height: 120px;
+				padding-left: 15px;
 				h1 {margin: 0 0 5px}
 				.location {
 					color: $color-primary;
@@ -115,16 +123,18 @@
 			.header {
 				height: 120px;
 				background: white;
+				padding-top: 15px;
 			}
 			.body {
 				background: $color-primary;
 				color: white;
 				font-family: $font-family-serif;
 				font-weight: lighter;
-				font-size: 24px;
+				font-size: 18px;
+				padding-top: 20px;
 				@include block-padding();
-				line-height: 36px;
-				height: 657px;
+				line-height: 30px;
+				height: 659px;
 				@include media($laptop) {
 					font-size: 16px;
 				}
@@ -145,6 +155,7 @@
 				}
 				span[class^="icon"]{
 					margin-right: 10px;
+					font-size: 32px;
 				}
 			}
 			.price {
@@ -153,7 +164,7 @@
 				letter-spacing: 0px;
 				background: $dark-grey;
 				color: white;
-				padding: 25px;
+				padding: 24px;
 				@include block-padding();
 				span {
 					font-weight: 600;
@@ -161,7 +172,7 @@
 					float: right;
 				}
 				@include media($laptop) {
-					padding: 18px;
+					padding: 17px;
 					font-size: 16px;
 					text-align: center;
 					float: none;
@@ -195,6 +206,8 @@
 			}
 			#calendar {
 				@include block-padding();
+				
+				margin: 20px 0 10px;
 		    	
 				header {
 			      overflow: clear;
@@ -209,21 +222,29 @@
 				      font-weight: 700;
 				      margin: 0 0 10px;
 				      text-align: center;
+				      text-transform: uppercase;
 				    }
 				    button {
 				    	background: #F8F8F8;
-				      position: absolute;
-				      top: -4px;
-				      &:first-child {
-					    left: 0;
-					  }
-					  &:last-child {
-				      	right: 0;
-				      }
+				    	position: absolute;
+				    	top: -4px;
+				    	&:first-child {
+							left: 0;
+						}
+						&:last-child {
+				      		right: 0;
+				      	}
 				    }
 			    }
 			    
-			  
+			    .day-headers {
+			    	text-transform: uppercase;
+			    }
+			    
+			    div.day.header {
+			    	height: auto;
+			    }
+			    
 			    table {
 			      background: #F8F8F8;
 			      border-collapse: collapse;
@@ -273,10 +294,11 @@
 					display: inline-block;
 					clear: none;
 					padding-right: 10px;
+					text-align: center;
 					
 					&.double {
 						//@include span-columns(6 of 12);
-						width: 50% !important;
+						width: 49% !important;
 						margin: 0 0 10px 0;
 						&.select {
 							margin: 10px 0 0 0;
@@ -288,8 +310,9 @@
 					}
 					
 					label {
+						display: inline-block;
 						font-weight: 300;
-						font-size: 24px;
+						font-size: 22px;
 						line-height: 28px;
 						vertical-align: super;
 						margin: 15px 0 0 0;
@@ -303,7 +326,7 @@
 					}
 					.select {
 						//@include span-columns(3 of 12);
-						width: 100%;
+						//width: 100%;
 					}
 					
 				}

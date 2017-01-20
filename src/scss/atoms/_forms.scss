@@ -23,18 +23,22 @@ button {
 	}
 }
 input[type="date"], input[type="number"], input[type="text"], input[type="email"]{
+	width: 100%;
 	border: 1px solid $green;
 	padding: 0 8px;
 	box-sizing: border-box;
 	margin-bottom: 5px;
 	&:focus {
 	    outline: none;
-	    box-shadow: inset 0 0 10px $color-primary;
+	    box-shadow: inset 0 0 5px $color-primary;
 	}
 }
 input[type="checkbox"] {
-	appearance: none;	
-	height: 10px;
+	display: none;	
+	
+	& + label {
+		margin-bottom: 10px;
+	}
 	
 	& + label span {
 	    display:inline-block;
@@ -76,6 +80,7 @@ label {
 }
 .select {
     //width: 120px;
+    margin-bottom: 5px;
     border-radius: 0;
     overflow: hidden;
     //background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
@@ -89,10 +94,12 @@ label {
 	    box-shadow: none;
 	    background: transparent;
 	    background-image: none;
-	    -webkit-appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 	    &:focus {
 		    outline: none;
-		    box-shadow: inset 0 0 10px $color-primary;
+		    box-shadow: inset 0 0 5px $color-primary;
 		}
 	}
 	&:after {
@@ -116,7 +123,6 @@ label {
 button.btn-round {
 	border-radius: 20px;
 	box-sizing: border-box;
-	padding-top: 4px;
 	border: none;
 	width: 40px;
 	height: 40px;
@@ -125,6 +131,7 @@ button.btn-favorite {
 	background: $color-primary;
 	color: white;
 	font-size: 20px;
+	pointer-events: auto;
 }
 .coastal button.btn-favorite {
 	background: $blue;

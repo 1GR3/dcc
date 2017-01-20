@@ -14,26 +14,18 @@
 				@include span-columns(12 of 12);
 			}
 			background: #EEEEEE;
-			padding: 15px;
 			margin-bottom: -5000px; /* any large number will do */
 			padding-bottom: 5000px; 
 			form[name="side-search"] {
 				input[type="text"], input[type="number"], .btn-submit {width: 100%;}
 				@include media($fullhd) {
 					input[type="data"], .select {
-						@include span-columns(4 of 12);
+						@include span-columns(12 of 12);
 					}
-					.select:nth-child(3n+2){
-							@include omega();
-					}
-					
 				}
 				@include media($desktop) {
 					input[type="data"], .select {
-						@include span-columns(6 of 12);
-					}
-					.select:nth-child(2n+2){
-							@include omega();
+						@include span-columns(12 of 12);
 					}
 				}
 				@include media($laptop) {
@@ -48,6 +40,28 @@
 					padding-bottom: 20px;
 				}
 			}
+			fieldset.refine, fieldset.filter, fieldset.submit {
+				border: 0;
+				margin: 0;
+			}
+			fieldset.refine {
+				background: $green;
+				padding-top: 60px;
+			}
+			fieldset.filter {
+				margin: 20px 15px 0;
+			}
+			.refine legend, .filter legend {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.refine legend {
+				width: 100%;
+				padding-top: 20px;
+				margin-bottom: -45px;
+				background: $green;
+				color: $white;
+			}
 		}
 		#results {
 			@include span-columns(9);
@@ -61,8 +75,8 @@
 			float: left;
 			#map {
 				width: 100%;
-				height: 200px;
-				background: rgba(255,230,120,1);
+				height: 300px;
+				background: #EEEEEE;
 			}
 			.articles {
 				@include span-columns(8 of 8);
@@ -86,6 +100,9 @@
 							width: 100%;
 						}
 					}
+					a {
+						color: $white;
+					}
 					.main-info {
 						margin-top: -300px;
 						height: 300px;
@@ -103,12 +120,20 @@
 							font-size: 24px;
 							text-shadow: 0px 2px 6px rgba(0,0,0,0.30), 0 0 2px rgba(0,0,0,.5);
 							margin: 180px 0 0;
+							pointer-events: auto;
 						}
-						.location { text-shadow: 0 2px 4px rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.5); }
+						.location {
+							text-shadow: 0 2px 4px rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.5);
+							pointer-events: auto;
+						}
 						.star-rating{
 							float: right;
 							margin-top: -20px;
 							text-shadow: 0 2px 4px rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.5);
+							pointer-events: auto;
+							@include media($tablet) {
+								margin-top: 0;
+							}
 						}
 					}
 					.summary {
@@ -124,6 +149,9 @@
 							float: right;
 							font-weight: bold;
 							font-size: 20px;
+						}
+						span:nth-child(2n+0) {
+							margin-right: 10px;
 						}
 					}
 					

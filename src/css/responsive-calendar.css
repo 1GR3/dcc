@@ -1,0 +1,80 @@
+.responsive-calendar .controls {
+  text-align: center;
+}
+.responsive-calendar .controls a {
+  cursor: pointer;
+}
+.responsive-calendar .controls h4 {
+  display: inline;
+}
+.responsive-calendar .day-headers,
+.responsive-calendar .days {
+  font-size: 0;
+}
+.responsive-calendar .day {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  width: 14.285714285714286%;
+  text-align: center;
+}
+.responsive-calendar .day a {
+  color: #000000;
+  display: block;
+  cursor: pointer;
+  padding: 20% 0 20% 0;
+}
+.responsive-calendar .day a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+.responsive-calendar .day.header {
+  border-bottom: 1px gray solid;
+}
+.responsive-calendar .day.selected a {
+  background-color: #598325;
+  color: #ffffff;
+}
+.responsive-calendar .day.end-date a {
+  background-color: #598325;
+  color: #ffffff;
+}
+.responsive-calendar .day.changeover.selected a,
+.responsive-calendar .day.changeover.selected a:hover {
+  background-color: #557d23;
+  color: #ffffff;
+}
+.responsive-calendar .day.past a,
+.responsive-calendar .day.past.active a,
+.responsive-calendar .day.past.changeover a {
+	background: none;
+	color: #dddddd;
+}
+.responsive-calendar .day.past.active a:hover {
+	background-color: #eeeeee;
+	color: #dddddd;
+}
+.responsive-calendar .day.active a {
+  background-color: #c60000;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+.responsive-calendar .day.active.changeover a,
+.responsive-calendar .day.active.changeover a:hover {
+  background-color: #bd0000;
+}
+.responsive-calendar .day.not-current a {
+  color: #dddddd;
+}
+.responsive-calendar .day.changeover a {
+  background-color: #f3f3f3;
+}
+.responsive-calendar .day.changeover a:hover {
+  background-color: #e8e8e8;
+}
+.responsive-calendar .day .badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 1;
+}

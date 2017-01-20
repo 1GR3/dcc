@@ -3,13 +3,14 @@
 // overwriting default appearence
 
 .slick-prev, .slick-next {
+	font-family: Arial, sans-serif;
     font-size: 0;
     line-height: 0;
     position: absolute;
     top: 50%;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     margin-top: -10px;
     padding: 0;
     cursor: pointer;
@@ -22,23 +23,22 @@
     }
 }
 .slick-prev {
-	float: left;
+	left: 2%;
+	z-index: 999;
 	&:before {
-		content: "<";
-		color: white;
-		font-size: 40px;
+		content: "\276E";
+		color: rgba(white, 0.6);
+		font-size: 60px;
 	}
 }
 .slick-next{
-	float: right;
+	right: 2%;
 	&:before {
-		content: ">";
-		color: white;
-		font-size: 40px;
+		content: "\276F";
+		color: rgba(white, 0.6);
+		font-size: 60px;
 	}
 }
-
-
 
 // single page slider
 
