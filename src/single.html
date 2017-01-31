@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <link rel="stylesheet" href="css/responsive-calendar.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
@@ -171,7 +171,9 @@ For a 3 night short break save 30% off a week's price. Mon–Fri breaks are offe
 				<p><small>*A short break during peak times may only be booked within 2 weeks of the required dates. Peak times are: June to September, October and end of May half terms, Christmas, New Year and Easter.
 For more information please visit our Dorset Short Breaks Information Page.</small></p>
 		    </div>
+		    <div id="map" class="tab-content tc-3"></div>
 		</article>
+		
 		<aside class="">
 			<div class="header mobile-hidden">
 				<button class="btn-favorite btn-round"><span class="icon-hearth"></span></button>
@@ -345,9 +347,6 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 			</div>
 		</aside>
 		
-		<div id="map" class="tab-content tc-3">
-		</div>
-		
 	</div>
 	
 	<footer>
@@ -443,112 +442,13 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/singlepage.js"></script>
     <!-- <script src="js/app.js"></script> -->
     <script>
     			
 		$( document ).ready(function() {
 			
-			$().ready(function (e) {
-			    $('.slickslide').slick({
-			        dots: true,
-			        infinite: true,
-			        speed: 500,
-			        fade: false,
-			        slide: 'li',
-			        cssEase: 'linear',
-			        centerMode: true,
-			        slidesToShow: 1,
-			        variableWidth: true,
-			        autoplay: true,
-			        autoplaySpeed: 4000,
-			        responsive: [{
-			            breakpoint: 800,
-			            settings: {
-			                arrows: false,
-			                centerMode: false,
-			                centerPadding: '40px',
-			                variableWidth: false,
-			                slidesToShow: 1,
-			                dots: true
-			            },
-			            breakpoint: 1024,
-			            settings: {
-			                arrows: false,
-			                centerMode: false,
-			                centerPadding: '40px',
-			                variableWidth: false,
-			                slidesToShow: 1,
-			                dots: true
 			
-			            }
-			        }],
-			        customPaging: function (slider, i) {
-			            return '<button class="tab">' + $('.slick-thumbs li:nth-child(' + (i + 1) + ')').html() + '</button>';
-			        }
-			    });
-			});
-			
-			/*
-$(window).resize(function(){
-				if ($(window).width() <= 768){	
-					$(".slick-dots").css("height":"2px");
-				}	
-			});
-*/
-		
-	    	/*
-$("aside .body").css("height", $(".slick-list").height());
-	    	console.log( $(".slick-list").height() );
-*/
-	    	
-	    	$(".tab-nav li").click(function(){
-		    	$(this).siblings().removeClass("active");
-		    	$(this).addClass("active");
-	    	})
-	    	$(".t1").click(function(){
-	    		$(".tab-content").removeClass("active");
-		    	$(".tc-1").addClass("active");
-		    	
-	    	})
-	    	$(".t2").click(function(){
-	    		$(".tab-content").removeClass("active");
-		    	$(".tc-2").addClass("active");
-		    	
-	    	})
-	    	$(".t3").click(function(){
-	    		$(".tab-content").removeClass("active");
-		    	$(".tc-3").addClass("active");
-		    	
-	    	})
-	    	$(".t4").click(function(){
-	    		$(".tab-content").removeClass("active");
-		    	$(".tc-4").addClass("active");
-		    	
-	    	})
-	    	
-	    	/*
-$('img[src$=".svg"]').each(function() {
-		        var $img = jQuery(this);
-		        var imgURL = $img.attr('src');
-		        var attributes = $img.prop("attributes");
-		
-		        $.get(imgURL, function(data) {
-		            // Get the SVG tag, ignore the rest
-		            var $svg = jQuery(data).find('svg');
-		
-		            // Remove any invalid XML tags
-		            $svg = $svg.removeAttr('xmlns:a');
-		
-		            // Loop through IMG attributes and apply on SVG
-		            $.each(attributes, function() {
-		                $svg.attr(this.name, this.value);
-		            });
-		
-		            // Replace IMG with SVG
-		            $img.replaceWith($svg);
-		        }, 'xml');
-		    });
-*/
 	    	
     	});
 		

@@ -228,6 +228,18 @@ gulp.task('sassdoc', function () {
     .pipe(sassdoc(options));
 });
 
+var filesToMove = [
+        './src/css/**/*.css',
+        './src/js/**/*.js'
+    ];
+
+gulp.task('move',['clean'], function(){
+  // the base option sets the relative root for the set of files,
+  // preserving the folder structure
+  gulp.src(filesToMove, { base: './' })
+  .pipe(gulp.dest('dist'));
+});
+
 // BUILD TASKS
 // ------------
 
