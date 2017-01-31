@@ -56,11 +56,12 @@
 				font-weight: bold;
 			}
 			.refine legend {
-				width: 100%;
+				
 				padding-top: 20px;
-				margin-bottom: -45px;
 				background: $green;
 				color: $white;
+				position: absolute;
+				top: 10px;
 			}
 		}
 		#results {
