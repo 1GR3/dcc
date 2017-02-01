@@ -309,6 +309,8 @@
 					<button id="formBoxSubmit" class="btn-submit submit-form" data-target-form="search_property"><span></span>Search</button>
 				</fieldset>
 			</form>
+			<button id="toggle-filter">Toggle Filters
+			</button>
 		</aside>
 		<div id="results">
 			<div id="map">
@@ -674,6 +676,12 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+    	$("#toggle-filter").click(function(){
+    	console.log("yoohoo")
+		    $("div.content > aside > form").slideToggle('slow');
+		});
+    </script>
     <!-- Google Analytics -->
 
   </body>
