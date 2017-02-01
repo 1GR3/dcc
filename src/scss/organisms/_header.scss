@@ -221,6 +221,13 @@ body {
 				input, .select, button {
 					@include span-columns(2 of 8);
 				}
+				@include media($tablet) {
+					@include span-columns(12);
+					@include shift(0);
+					input, .select, button {
+						@include span-columns(3 of 12);
+					}
+				}
 				
 				@include media($mobile) {
 					input, .select {display: none}
