@@ -1,4 +1,10 @@
 $().ready(function (e) {
+
+	sidebarHeight = function (){
+		$("aside .body").css("height", $(".slick-list").height()-$(".slick-dots").height());
+		$("div.price").css("height", $(".slick-dots").height());
+	}
+	
     $('.slickslide').slick({
         dots: true,
         infinite: true,
@@ -42,10 +48,7 @@ $().ready(function (e) {
 	$( window ).resize(function() {
 	  sidebarHeight();
 	});
-	sidebarHeight = function (){
-		$("aside .body").css("height", $(".slick-list").height()-$(".slick-dots").height());
-		$("div.price").css("height", $(".slick-dots").height());
-	}
+	
 	$(".tab-nav li").click(function(){
 		$(this).siblings().removeClass("active");
 		$(this).addClass("active");
