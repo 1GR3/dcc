@@ -309,8 +309,7 @@
 					<button id="formBoxSubmit" class="btn-submit submit-form" data-target-form="search_property"><span></span>Search</button>
 				</fieldset>
 			</form>
-			<button id="toggle-filter">Toggle Filters
-			</button>
+			<button id="toggle-filter" class="">Filters</button>
 		</aside>
 		<div id="results">
 			<div id="map">
@@ -678,8 +677,8 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script>
     	$("#toggle-filter").click(function(){
-    	console.log("yoohoo")
-		    $("div.content > aside > form").slideToggle('slow');
+    		$(this).toggleClass("open");
+		    $("div.content > aside > form").slideToggle("slow");
 		});
     </script>
     <!-- Google Analytics -->

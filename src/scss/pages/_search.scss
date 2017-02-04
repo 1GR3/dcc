@@ -21,6 +21,7 @@
 				padding-bottom: 0; 
 			}
 			form[name="side-search"] {
+				display: none;
 				input[type="text"], input[type="number"], .btn-submit {width: 100%;}
 				@include media($fullhd) {
 					input[type="data"], .select {
@@ -36,12 +37,13 @@
 					input[type="data"], .select {@include span-columns(4 of 4);}
 				}
 				@include media($tablet) {
-					input[type="data"], .select {@include span-columns(4 of 12);}
-					padding-bottom: 25px;
+					input[type="data"], .select {@include span-columns(6 of 12); @include omega(2n);}
+					
+					padding-bottom: 5px;
 				}
 				@include media($mobile) {
-					input[type="data"], .select {@include span-columns(6 of 12);}
-					padding-bottom: 20px;
+					input[type="data"], .select {@include span-columns(12 of 12);}
+					padding-bottom: 5px;
 				}
 			}
 			fieldset.refine, fieldset.filter, fieldset.submit {
@@ -67,7 +69,16 @@
 				position: absolute;
 				top: 10px;
 			}
-			#toggle-filter{ width: 100%}
+			#toggle-filter{ 
+				display: none;
+				&:before { content: "⇩ Show " }
+				&.open:before { content: "⇧ Hide " }
+				@include media($laptop) {
+					width: 100%;
+					display: block;
+					color: #666;
+				}
+			}
 		}
 		#results {
 			@include span-columns(9);
