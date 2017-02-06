@@ -1,8 +1,12 @@
 $().ready(function (e) {
 
 	sidebarHeight = function (){
-		$("aside .body").css("height", $(".slick-list").height()-$(".slick-dots").height());
-		$("div.price").css("height", $(".slick-dots").height());
+		if ($(window).width()>=1024){
+			$("aside .body").css("height", $(".slick-list").height()-$(".slick-dots").height());
+			$("div.price").css("height", $(".slick-dots").height());
+		} else {
+			$("aside .body").css("height","auto");
+		}
 	}
 	
     $('.slickslide').slick({

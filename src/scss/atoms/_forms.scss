@@ -133,6 +133,28 @@ button.btn-favorite {
 	font-size: 20px;
 	pointer-events: auto;
 }
+button.btn-share {
+	color: white;
+	font-family: $font-family-serif !important;
+	font-size: 18px;
+	font-weight: 300;
+	pointer-events: auto;
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 10px;
+	@media only screen and (min-width:1024px) and (max-width:1180px) {
+		padding: 0;
+		width: 40px;
+		.share-text { display: none}
+	}
+}
+.btn-facebook {
+	background: #3b5998
+}
+.btn-twitter {
+	background: #1da1f2;
+}
 .coastal button.btn-favorite {
 	background: $blue;
 	color: white;
