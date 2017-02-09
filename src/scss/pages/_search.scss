@@ -131,6 +131,9 @@
 						.property-type { height: 30px;}
 						.btn-favorite{
 							float: right;
+							&.shortlist-remove {
+								color: lighten($green, 10%);
+							}
 						}
 						h2 { 
 							font-weight: bold;
@@ -174,6 +177,12 @@
 					
 					&.coastal {
 						background: $blue;
+						.btn-favorite{
+							float: right;
+							&.shortlist-remove {
+								color: lighten($blue, 10%);
+							}
+						}
 					}
 					@include media($imac) {
 						@include span-columns(3 of 9);
