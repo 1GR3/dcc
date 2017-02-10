@@ -21,7 +21,8 @@
 				padding-bottom: 0; 
 			}
 			form[name="side-search"] {
-				display: none;
+			
+				
 				input[type="text"], input[type="number"], .btn-submit {width: 100%;}
 				@include media($fullhd) {
 					input[type="data"], .select {
@@ -38,7 +39,7 @@
 				}
 				@include media($tablet) {
 					input[type="data"], .select {@include span-columns(6 of 12); @include omega(2n);}
-					
+					display: none;
 					padding-bottom: 5px;
 				}
 				@include media($mobile) {
@@ -73,7 +74,7 @@
 				display: none;
 				&:before { content: "⇩ Show " }
 				&.open:before { content: "⇧ Hide " }
-				@include media($laptop) {
+				@include media($tablet) {
 					width: 100%;
 					display: block;
 					color: #666;
