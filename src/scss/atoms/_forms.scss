@@ -125,6 +125,7 @@ button.btn-back {
 	padding-left: 0;
 	padding-right: 10px;
 	margin-left: 15px;
+	position: relative;
 }
 button.btn-back:before {
 	position: absolute;
@@ -134,8 +135,8 @@ button.btn-back:before {
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
     border-right: 16px solid white;
-    left: 14px;
-    top: 14px;
+    left: -16px;
+    top: 0px;
 }
 button.btn-round {
 	border-radius: 20px;
@@ -160,7 +161,7 @@ button.btn-share {
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: 10px;
-	@media only screen and (min-width:1024px) and (max-width:1180px) {
+	@media only screen and (min-width:1024px) and (max-width:1280px) {
 		padding: 0;
 		width: 40px;
 		.share-text { display: none}
