@@ -336,10 +336,11 @@
 			});
 		    
 		    $(".menu-icon").click(function(){
-			    $(".main-nav ul").toggleClass("open");
+			    $(".main-nav").toggleClass("open");
+			    //alert("click");
 		    });
-		    $(".main-nav ul").click(function(){
-			    $(this).toggleClass("open");
+		    $(".main-nav li").click(function(){
+			    $(".main-nav").toggleClass("open");
 		    });
 		});
     </script

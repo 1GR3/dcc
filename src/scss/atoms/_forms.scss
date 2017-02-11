@@ -119,7 +119,25 @@ label {
 .btn{
 	border: none;
 }
-
+button.btn-back {
+	background: white;
+	color: $color-primary;
+	padding-left: 0;
+	padding-right: 10px;
+	margin-left: 15px;
+	position: relative;
+}
+button.btn-back:before {
+	position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 16px solid white;
+    left: -16px;
+    top: 0px;
+}
 button.btn-round {
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -132,6 +150,31 @@ button.btn-favorite {
 	color: white;
 	font-size: 20px;
 	pointer-events: auto;
+}
+button.btn-share {
+	color: white;
+	font-family: $font-family-serif !important;
+	font-size: 18px;
+	font-weight: 300;
+	pointer-events: auto;
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 10px;
+	@media only screen and (min-width:1024px) and (max-width:1280px) {
+		padding: 0;
+		width: 40px;
+		.share-text { display: none}
+	}
+}
+.btn-facebook {
+	background: #3b5998
+}
+.btn-twitter {
+	background: #1da1f2;
+}
+.btn-pinterest {
+	background: #C92228;
 }
 .coastal button.btn-favorite {
 	background: $blue;

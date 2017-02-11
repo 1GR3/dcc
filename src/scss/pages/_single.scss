@@ -3,7 +3,7 @@
 	.mobile-hidden{
 		display: block;
 	}
-	@include media($tablet) {
+	@include media($tablet_l) {
 		.mobile-hidden{
 			display: none
 		}
@@ -20,7 +20,7 @@
 	}
 	.tab-nav {
 		display: none;
-		@include media($tablet) {
+		@include media($tablet_l) {
 			@include outer-container;
 			display: block;
 			background: $dark-grey;
@@ -74,8 +74,6 @@
 			}
 			@include media($tablet_l) {
 				@include span-columns(12);
-			}
-			@include media($tablet) {
 				.header {
 					margin-bottom: -120px;
 				    position: relative;
@@ -88,8 +86,9 @@
 				    	
 				    }
 					.location {
-						color: $color-primary;
 						font-size: 20px;
+						color: white !important;
+						text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.75);
 					}
 				}
 			}
@@ -125,6 +124,15 @@
 				height: 120px;
 				background: white;
 				padding-top: 15px;
+				text-align: center;
+				.btn-favorite{
+					&.shortlist-remove {
+						color: lighten($green, 10%);
+					}
+				}
+				@include media($tablet_l) {
+					height: 60px;
+				}
 			}
 			.body {
 				background: $color-primary;
@@ -150,9 +158,6 @@
 				@include media($tablet) {
 					column-count: 1;
 					font-size: 24px;
-					font-weight: 300;
-					background: white;
-					color: $color-primary;
 				}
 				span[class^="icon"]{
 					margin-right: 10px;
@@ -358,7 +363,7 @@
 		footer > div.background-dark > div > div.newsletter > form > button { background: $blue; }
 		
 		header nav.personal-nav > ul.logged-in > li > a,
-		.content article .header .location,
+		.content > article > .header .location,
 		.content > aside > div.summary.tab-content.tc-1.active > ul > li,
 		.select:after,
 		footer > div.wrapper > nav.social > a,
@@ -371,17 +376,28 @@
 		footer > div.wrapper > nav.social > a {
 			    border-color: $blue;
 		}
-		
+		aside {
+			.header {
+				.btn-favorite{
+					&.shortlist-remove {
+						color: lighten($blue, 10%);
+					}
+				}
+			}
+		}
 		.select select:focus {
 		    outline: none;
 		    box-shadow: inset 0 0 5px $blue;
 		}
 		
 		
-		@include media($tablet) {
+		@include media($tablet_l) {
 			.content aside .body {
 				background: white;
 				color: $blue;
+			}
+			.content > article > .header .location {
+				color: white !important;
 			}
 		}
 	}
