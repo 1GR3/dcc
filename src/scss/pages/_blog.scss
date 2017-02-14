@@ -1,5 +1,5 @@
 body{
-	&.blog{
+	&.post-template-default{
 		.content {
 			@include outer-container;
 			aside{
@@ -24,7 +24,7 @@ body{
 		
 		
 	}
-	&.blog-post{
+	&.single-post{
 		
 	}
 }
