@@ -312,6 +312,7 @@
 			<button id="toggle-filter" class="">Filters</button>
 		</aside>
 		<div id="results">
+			<button id="toggle-map" class="">Map</button>
 			<div id="map">
 			</div>
 			<div class="page-filters">
@@ -679,6 +680,10 @@
     	$("#toggle-filter").click(function(){
     		$(this).toggleClass("open");
 		    $("div.content > aside > form").slideToggle("slow");
+		});
+		$("#toggle-map").click(function(){
+    		$(this).toggleClass("open");
+		    $("#map").slideToggle("slow");
 		});
     </script>
     <!-- Google Analytics -->
