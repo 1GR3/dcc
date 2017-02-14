@@ -297,64 +297,64 @@ For more information please visit our Dorset Short Breaks Information Page.</sma
 					</div>
 				</div>
 
-				<form class="book">
-					<div class="double"><label for="nights"><strong>Length of stay:</strong></label></div>
-					<div class="double last">
-						<div class="select ">
-							<select name="nights" id="nights">
-								<option value="3">2 nights</option>
-								<option value="4">3 nights</option>
-								<option value="5">4 nights</option>
-								<option value="6">5 nights</option>
-								<option value="7">6 nights</option>
-								<option value="8" selected="">7 nights</option>
-								<option value="15">14 nights</option>
-								<option value="22">21 nights</option>
-							</select>
-						</div>
-					</div><br>
-					<div class="double"><label for="adults"><strong>Number of guests:</strong></label></div>
-					<div class="double last">
-					<div><label> Adults:</label></div>
+				
+				
+				<form class="book" action="http://dcc.chillifish.com/booking-form/141/" method="post">
+					<label><strong>1. Select length of stay</strong></label>
+					<div class="select ">
+						<select name="nights" id="nights">
+							<option value="4">3 nights</option>
+							<option value="5">4 nights</option>
+							<option value="6">5 nights</option>
+							<option value="7">6 nights</option>
+							<option value="8" selected="">7 nights</option>
+							<option value="15">14 nights</option>
+							<option value="22">21 nights</option>
+						</select>
+					</div>
+					<br>
+					<label><strong>2. Select number of guests</strong></label>
+					<div class="label"><label> Adults:</label></div>
+					<div class="combo">
 						<div class="select">
 							<select name="adults" id="adults">
-								<option value="">(18+)</option>
+								<option value="" disabled selected>(18+ y.o.)</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 							</select>
 						</div>
-					</div><br>
-					<div><label for="children">Children:</label></div>
-					<div>
+					</div>
+					<div class="label"><label>Children:</label></div>
+					<div class="combo">
 						<div class="select">
 							<select name="children" id="children">
-								<option value="">(2–17)</option>
+								<option value="">(2–17 y.o.)</option>
 								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 							</select>
 						</div>
 					</div>
-					<div><label for="infants">Infants:</label></div>
-					<div class="last">
+					<div class="label"><label>Infants:</label></div>
+					<div class="combo">
 						<div class="select">
 							<select name="infants" id="infants">
-								<option value="">(0-2)</option>
+								<option value="" disabled selected>(0-2 y.o.)</option>
 								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 							</select>
 						</div>
 					</div>
-					<input id="propertyRef" name="propertyRef" value="139" type="hidden">
-					<input id="propertyName" name="propertyName" value="Bell Cottage" type="hidden">
-					<input id="arr_date" name="arr_date" type="hidden">
-					<input id="dep_date" name="dep_date" type="hidden">
-					<input id="bke_fee" name="bke_fee" type="hidden">
-					<input id="pet_fee" name="pet_fee" type="hidden">
-					<input id="total" name="total" type="hidden">
-					<input id="bedrooms" name="bedrooms" value="1" type="hidden">
-					<input id="minAge" name="minAge" value="18" type="hidden">
+					<input type="hidden" id="propertyRef" name="propertyRef" value="141">
+					<input type="hidden" id="propertyName" name="propertyName" value="Pepper Pot Cottage">
+					<input type="hidden" id="arr_date" name="arr_date">
+					<input type="hidden" id="dep_date" name="dep_date">
+					<input type="hidden" id="bke_fee" name="bke_fee">
+					<input type="hidden" id="pet_fee" name="pet_fee">
+					<input type="hidden" id="total" name="total">
+					<input type="hidden" id="bedrooms" name="bedrooms" value="1">
+					<input type="hidden" id="minAge" name="minAge" value="0">
 					<button class="btn-big" type="submit" data-target-form="search_property">Book now!</button>
 				</form>
 			</div>

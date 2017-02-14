@@ -295,46 +295,32 @@
 			.book {
 				margin-bottom: 20px;
 				padding: 25px;
-				&>div{
-					width: 25%;
+				&>label {
 					display: inline-block;
-					clear: none;
-					padding-right: 10px;
-					text-align: center;
-					
-					&.double {
-						//@include span-columns(6 of 12);
-						width: 49% !important;
-						margin: 0 0 10px 0;
-						&.select {
-							margin: 10px 0 0 0;
-						}
+					font-weight: 300;
+					font-size: 22px;
+					line-height: 28px;
+					vertical-align: super;
+					margin: 15px 0 0 0;
+					strong {
+						font-family: $font-family-serif;
+						font-weight: 400;
 					}
-					&.last {
-						@include omega();
-						padding-right: 0;
+					@include media($laptop) {
+						font-size: 16px;
 					}
-					
-					label {
-						display: inline-block;
-						font-weight: 300;
-						font-size: 22px;
-						line-height: 28px;
-						vertical-align: super;
-						margin: 15px 0 0 0;
-						strong {
-							font-family: $font-family-serif;
-							font-weight: 400;
-						}
-						@include media($laptop) {
-							font-size: 16px;
-						}
-					}
-					.select {
-						//@include span-columns(3 of 12);
-						//width: 100%;
-					}
-					
+				}
+				.select {
+					width: 100%;
+				}
+				.label {
+					width: 30%;
+					float: left;
+					label { padding-top: 10px; }
+				}
+				.combo { 
+					width: 70%;
+					float: left;
 				}
 				button {
 					margin-top: 10px;
@@ -371,7 +357,8 @@
 		footer > div.background-dark > div > div.info > p > a,
 		footer > div.wrapper > nav > h6:before { color: $blue !important; }
 		
-		.content > aside > div.tab-content.tc-4 > form > div > div, 
+		.content > aside > div.tab-content.tc-4 > form > div > div,
+		.content > aside > div.tab-content.tc-4 > form > div.select,
 		.content > aside  #calendar > header,
 		footer > div.wrapper > nav.social > a {
 			    border-color: $blue;
