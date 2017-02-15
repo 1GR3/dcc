@@ -185,6 +185,9 @@
 							@include media($tablet) {
 								margin-top: 0;
 							}
+							&.gold {
+								color: $gold
+							}
 						}
 					}
 					.summary {

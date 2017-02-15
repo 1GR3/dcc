@@ -163,6 +163,14 @@
 					margin-right: 10px;
 					font-size: 32px;
 				}
+				.star-rating {
+					&.gold {
+						color: $gold;
+					}
+					.icon-ve {
+						color: $white;
+					}
+				}
 			}
 			.price {
 				font-weight: 100;
