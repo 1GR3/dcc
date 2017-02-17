@@ -86,7 +86,6 @@ label {
 	
 }
 .select {
-    min-width: 25%;
     margin-bottom: 5px;
     border-radius: 0;
     overflow: hidden;
@@ -247,6 +246,11 @@ button.btn-share {
 }
 .frm_error {
 	color: $color-warning;
+}
+.frm_forms {
+	.select {
+	    min-width: 25%;
+	}
 }
 
 @mixin underlined-link($color) {
