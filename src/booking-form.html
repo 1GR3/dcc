@@ -200,7 +200,7 @@
 												<input name="item_meta[0]" value="" type="hidden">
 												<input id="frm_submit_entry_7" name="frm_submit_entry_7" value="87f331b3ce" type="hidden">
 												<input name="_wp_http_referer" value="/booking-form/101/" type="hidden">
-												<input name="item_meta[197]" id="field_z4nu9q" value="cd223b5341ee38884d8ba3c1b0b82131" data-frmval="cd223b5341ee38884d8ba3c1b0b82131" type="hidden">
+												<input name="item_meta[197]" id="field_z4nu9q" value="1a79dd17ef4b47e58b3836b8d63dd4e6" data-frmval="1a79dd17ef4b47e58b3836b8d63dd4e6" type="hidden">
 												<input name="item_meta[324]" id="field_qrc4zt" value="1" data-frmval="1" type="hidden">
 												<input name="item_meta[227]" id="field_n1fsum" value="2" data-frmval="2" type="hidden">
 												<input name="item_meta[228]" id="field_xn9iw0" value="" type="hidden">
@@ -254,14 +254,14 @@
 														<label for="field_a49xsn" class="frm_primary_label">Phone number
 															<span class="frm_required">*</span>
 														</label>
-														<input id="field_a49xsn" name="item_meta[153]" value="" data-sectionid="165" style="width:135px" data-reqmsg="This field cannot be blank." class="auto_width" type="text">
+														<input id="field_a49xsn" name="item_meta[153]" value="" data-sectionid="165" pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" data-reqmsg="This field cannot be blank." data-invmsg="Phone number is invalid" type="tel">
 
 													</div>
 													<div id="frm_field_154_container" class="frm_form_field form-field  frm_top_container">
 														<label for="field_q5cgie" class="frm_primary_label">Mobile number
 															<span class="frm_required"></span>
 														</label>
-														<input id="field_q5cgie" name="item_meta[154]" value="" data-sectionid="165" style="width:135px" class="auto_width" type="text">
+														<input id="field_q5cgie" name="item_meta[154]" value="" data-sectionid="165" pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" type="tel">
 
 													</div>
 													<div id="frm_field_155_container" class="frm_form_field form-field  frm_required_field frm_top_container">
@@ -794,10 +794,7 @@
 															<label for="field_3n3y0x-0" class="frm_primary_label">Age
 																<span class="frm_required">*</span>
 															</label>
-															<div class="select">
-																<input id="field_3n3y0x-0" name="item_meta[209][0][212]" value="" data-sectionid="209" min="2" max="17" step="1" data-reqmsg="This field cannot be blank." data-invmsg="Age must be between 1 and 18" type="number">
-
-															</div>
+															<input id="field_3n3y0x-0" name="item_meta[209][0][212]" value="" data-sectionid="209" min="2" max="17" step="1" data-reqmsg="This field cannot be blank." data-invmsg="Age must be between 1 and 18" type="number">
 
 														</div>
 														<div class="frm_form_field frm_hidden_container frm_repeat_buttons "><a href="#" class="frm_add_form_row frm_button" data-parent="209"><i class="frm_icon_font frm_plus_icon"> </i> Add</a>
@@ -830,10 +827,7 @@
 															<label for="field_va15d7-0" class="frm_primary_label">Age (months)
 																<span class="frm_required">*</span>
 															</label>
-															<div class="select">
-																<input id="field_va15d7-0" name="item_meta[214][0][216]" value="" data-sectionid="214" min="0" max="24" step="1" data-reqmsg="This field cannot be blank." data-invmsg="Age must be below 24 months" type="number">
-
-															</div>
+															<input id="field_va15d7-0" name="item_meta[214][0][216]" value="" data-sectionid="214" min="0" max="24" step="1" data-reqmsg="This field cannot be blank." data-invmsg="Age must be below 24 months" type="number">
 
 														</div>
 														<div class="frm_form_field frm_hidden_container frm_repeat_buttons "><a href="#" class="frm_add_form_row frm_button" data-parent="214"><i class="frm_icon_font frm_plus_icon"> </i> Add</a>
@@ -873,7 +867,7 @@
 												<input name="item_key" value="" type="hidden">
 												<div class="frm_submit">
 
-													<input class="btn-submit" value="Submit booking" formnovalidate="formnovalidate" type="submit">
+													<input value="Submit booking" class="btn-submit" formnovalidate="formnovalidate" type="submit">
 													<img class="frm_ajax_loading" src="http://dcc.chillifish.com/wp-content/plugins/formidable/images/ajax_loader.gif" alt="Sending" style="visibility:hidden;">
 
 												</div>

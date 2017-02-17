@@ -22,7 +22,7 @@ button {
 	    box-shadow: 0 0 10px $color-primary;
 	}
 }
-input[type="date"], input[type="number"], input[type="text"], input[type="email"]{
+input[type="date"], input[type="number"], input[type="text"], input[type="email"], input[type="tel"] {
 	width: 100%;
 	border: 1px solid $green;
 	padding: 0 8px;
@@ -31,6 +31,13 @@ input[type="date"], input[type="number"], input[type="text"], input[type="email"
 	&:focus {
 	    outline: none;
 	    box-shadow: inset 0 0 5px $color-primary;
+	}
+}
+input[type="tel"] {
+	width: 50%;
+
+	@include media($mobile) {
+		width: 100%;
 	}
 }
 input[type="checkbox"] {
@@ -79,7 +86,7 @@ label {
 	
 }
 .select {
-    //width: 120px;
+    min-width: 25%;
     margin-bottom: 5px;
     border-radius: 0;
     overflow: hidden;
@@ -229,6 +236,17 @@ button.btn-share {
 	font-size: 24px;
 	padding: 5px 10px 6px;
 	margin: 20px 0;
+}
+.frm_error_style {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+	background-color: $color-warning;
+	color: white;
+}
+.frm_error {
+	color: $color-warning;
 }
 
 @mixin underlined-link($color) {
