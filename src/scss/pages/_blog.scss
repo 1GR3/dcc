@@ -1,5 +1,5 @@
-body{
-	&.post-template-default{
+body {
+	&.post-template-default {
 		.content {
 			@include outer-container;
 			aside{

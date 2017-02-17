@@ -380,6 +380,11 @@
 					}
 				}
 			}
+			.btn-big {
+				&.disabled {
+					color: lighten($blue, 10%);
+				}
+			}
 		}
 		.select select:focus {
 		    outline: none;

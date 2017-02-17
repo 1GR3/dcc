@@ -201,6 +201,10 @@ button.btn-share {
 	height: auto;
 	font-family: $font-family-serif;
 	font-weight: 300;
+	
+	&.disabled {
+		color: lighten($green, 10%)
+	}
 }
 .btn-transparent:hover {
 	background: $green;
