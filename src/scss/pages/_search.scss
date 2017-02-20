@@ -121,7 +121,7 @@
 			#map {
 				width: 100%;
 				height: 300px;
-				background: #EEEE99;
+				background: $light_grey;
 				@include media($tablet) {
 					display: none;
 				}
