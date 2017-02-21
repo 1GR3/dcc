@@ -4,7 +4,15 @@
 		z-index: 1;
 		float: left;
 		width: 100%;
-		overflow: hidden; 
+		overflow: hidden;
+		
+		.main-text {
+			padding-right: 20px;
+			.dcc-thumbnail {
+				float: right;
+				margin-left: 20px;
+			}
+		}
 		aside {
 			@include span-columns(3);
 			
