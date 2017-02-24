@@ -144,12 +144,17 @@ button.btn-back:before {
     left: -16px;
     top: 0px;
 }
-button.btn-round {
+button.btn-round,
+a.btn-round {
 	border-radius: 20px;
 	box-sizing: border-box;
 	border: none;
 	width: 40px;
 	height: 40px;
+}
+a.btn-round {
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 button.btn-favorite {
 	background: $color-primary;
@@ -157,7 +162,8 @@ button.btn-favorite {
 	font-size: 20px;
 	pointer-events: auto;
 }
-button.btn-share {
+button.btn-share,
+a.btn-share {
 	color: white;
 	font-family: $font-family-serif !important;
 	font-size: 18px;
@@ -176,6 +182,14 @@ button.btn-share {
 		padding: 0;
 		width: 40px;
 		.share-text { display: none}
+	}
+}
+a.btn-share {
+	@media only screen and (min-width:1024px) and (max-width:1280px) {
+		padding: 8px;
+	}
+	@media only screen and (max-width:400px) {
+		padding: 8px;
 	}
 }
 .btn-facebook {
