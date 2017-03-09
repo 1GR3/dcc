@@ -22,7 +22,7 @@ button {
 	    box-shadow: 0 0 10px $color-primary;
 	}
 }
-input[type="date"], input[type="number"], input[type="text"], input[type="email"]{
+input[type="date"], input[type="number"], input[type="text"], input[type="email"], input[type="tel"] {
 	width: 100%;
 	border: 1px solid $green;
 	padding: 0 8px;
@@ -31,6 +31,13 @@ input[type="date"], input[type="number"], input[type="text"], input[type="email"
 	&:focus {
 	    outline: none;
 	    box-shadow: inset 0 0 5px $color-primary;
+	}
+}
+input[type="tel"] {
+	width: 50%;
+
+	@include media($mobile) {
+		width: 100%;
 	}
 }
 input[type="checkbox"] {
@@ -79,7 +86,6 @@ label {
 	
 }
 .select {
-    //width: 120px;
     margin-bottom: 5px;
     border-radius: 0;
     overflow: hidden;
@@ -138,12 +144,17 @@ button.btn-back:before {
     left: -16px;
     top: 0px;
 }
-button.btn-round {
+button.btn-round,
+a.btn-round {
 	border-radius: 20px;
 	box-sizing: border-box;
 	border: none;
 	width: 40px;
 	height: 40px;
+}
+a.btn-round {
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 button.btn-favorite {
 	background: $color-primary;
@@ -151,20 +162,34 @@ button.btn-favorite {
 	font-size: 20px;
 	pointer-events: auto;
 }
-button.btn-share {
+button.btn-share,
+a.btn-share {
 	color: white;
 	font-family: $font-family-serif !important;
 	font-size: 18px;
 	font-weight: 300;
 	pointer-events: auto;
 	width: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 5px;
 	@media only screen and (min-width:1024px) and (max-width:1280px) {
 		padding: 0;
 		width: 40px;
 		.share-text { display: none}
+	}
+	@media only screen and (max-width:400px) {
+		padding: 0;
+		width: 40px;
+		.share-text { display: none}
+	}
+}
+a.btn-share {
+	@media only screen and (min-width:1024px) and (max-width:1280px) {
+		padding: 8px;
+	}
+	@media only screen and (max-width:400px) {
+		padding: 8px;
 	}
 }
 .btn-facebook {
@@ -196,6 +221,10 @@ button.btn-share {
 	height: auto;
 	font-family: $font-family-serif;
 	font-weight: 300;
+	
+	&.disabled {
+		color: lighten($green, 10%)
+	}
 }
 .btn-transparent:hover {
 	background: $green;
@@ -220,6 +249,22 @@ button.btn-share {
 	font-size: 24px;
 	padding: 5px 10px 6px;
 	margin: 20px 0;
+}
+.frm_error_style {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+	background-color: $color-warning;
+	color: white;
+}
+.frm_error {
+	color: $color-warning;
+}
+.frm_forms {
+	.select {
+	    min-width: 25%;
+	}
 }
 
 @mixin underlined-link($color) {

@@ -163,10 +163,18 @@
 					margin-right: 10px;
 					font-size: 32px;
 				}
+				.star-rating {
+					&.gold {
+						color: $gold;
+					}
+					.icon-ve {
+						color: $white;
+					}
+				}
 			}
 			.price {
 				font-weight: 100;
-				font-size: 36px;
+				font-size: 32px;
 				letter-spacing: 0px;
 				background: $dark-grey;
 				color: white;
@@ -214,21 +222,28 @@
 				@include block-padding();
 				
 				margin: 20px 0 10px;
-		    	
+				
+				.arrival {
+					margin: 20px 0;
+					font-family: "Roboto slab", serif;
+					font-size: 22px;
+					font-weight: 400;
+		    	}
 				header {
-			      overflow: clear;
-			      position: relative;
-			      background: transparent;
-			      border-bottom: 2px solid $color-primary;
-			      color: $dark-grey;
-			      box-shadow: none;
-			      padding: 5px 0;
-			      h2 {
-				      font-size: 18px;
-				      font-weight: 700;
-				      margin: 0 0 10px;
-				      text-align: center;
-				      text-transform: uppercase;
+					margin-top: 20px;
+			    	overflow: clear;
+					position: relative;
+					background: transparent;
+					border-bottom: 2px solid $color-primary;
+					color: $dark-grey;
+					box-shadow: none;
+					padding: 5px 0;
+					h2 {
+				    	font-size: 18px;
+				    	font-weight: 700;
+				    	margin: 0 0 10px;
+				    	text-align: center;
+				    	text-transform: uppercase;
 				    }
 				    button {
 				    	background: #F8F8F8;
@@ -295,46 +310,33 @@
 			.book {
 				margin-bottom: 20px;
 				padding: 25px;
-				&>div{
-					width: 25%;
+				&>label {
+					width: 100%;
 					display: inline-block;
-					clear: none;
-					padding-right: 10px;
-					text-align: center;
-					
-					&.double {
-						//@include span-columns(6 of 12);
-						width: 49% !important;
-						margin: 0 0 10px 0;
-						&.select {
-							margin: 10px 0 0 0;
-						}
+					font-weight: 300;
+					font-size: 22px;
+					line-height: 28px;
+					vertical-align: super;
+					margin: 15px 0 0 0;
+					strong {
+						font-family: $font-family-serif;
+						font-weight: 400;
 					}
-					&.last {
-						@include omega();
-						padding-right: 0;
+					@include media($laptop) {
+						font-size: 16px;
 					}
-					
-					label {
-						display: inline-block;
-						font-weight: 300;
-						font-size: 22px;
-						line-height: 28px;
-						vertical-align: super;
-						margin: 15px 0 0 0;
-						strong {
-							font-family: $font-family-serif;
-							font-weight: 400;
-						}
-						@include media($laptop) {
-							font-size: 16px;
-						}
-					}
-					.select {
-						//@include span-columns(3 of 12);
-						//width: 100%;
-					}
-					
+				}
+				.select {
+					width: 100%;
+				}
+				.label {
+					width: 30%;
+					float: left;
+					label { padding-top: 10px; }
+				}
+				.combo { 
+					width: 70%;
+					float: left;
 				}
 				button {
 					margin-top: 10px;
@@ -343,10 +345,9 @@
 		}
 		
 		#map {
-			float: left;
 			width: 100%;
-			height: 200px;
-			background: rgba(255,230,120,1);
+			height: 300px;
+			background: $light_grey;
 			@include media($laptop) {
 				height: 400px;
 			}
@@ -371,7 +372,8 @@
 		footer > div.background-dark > div > div.info > p > a,
 		footer > div.wrapper > nav > h6:before { color: $blue !important; }
 		
-		.content > aside > div.tab-content.tc-4 > form > div > div, 
+		.content > aside > div.tab-content.tc-4 > form > div > div,
+		.content > aside > div.tab-content.tc-4 > form > div.select,
 		.content > aside  #calendar > header,
 		footer > div.wrapper > nav.social > a {
 			    border-color: $blue;
@@ -382,6 +384,11 @@
 					&.shortlist-remove {
 						color: lighten($blue, 10%);
 					}
+				}
+			}
+			.btn-big {
+				&.disabled {
+					color: lighten($blue, 10%);
 				}
 			}
 		}

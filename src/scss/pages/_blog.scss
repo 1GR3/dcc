@@ -1,5 +1,5 @@
-body{
-	&.blog{
+body {
+	&.post-template-default {
 		.content {
 			@include outer-container;
 			aside{
@@ -10,17 +10,80 @@ body{
 				.intelliwidget-excerpt-container {
 					margin-bottom: 30px;
 				}
+				form {
+					.select { width: 100%; }
+				}
 			}
 			.maincontent {
 				float:right;
 				padding:  10px;
 				@include span-columns(9);
 				@include omega();
+				
+				.entry-title {
+					margin: 0 0 10px;
+				}
+			}
+			aside {
+				#sidebar {
+					width: 100%;
+				}
+				.widget-area {
+					margin: 20px 0 0;
+					border-top: 1px solid $green;
+					border-bottom: 1px solid $green;
+					
+					.xoxo {
+						padding: 10px;
+						
+						.cat-item {
+							margin-top: 10px;
+							padding-bottom: 10px;
+							border-bottom: 1px dashed $green;
+						}
+					}
+					h3 {
+						margin: 0;
+					}
+					ul {
+						list-style-type: none;
+						padding: 0;
+					}
+				}
 			}
 		}
+	}
+	&.single-post{
 		
 	}
-	&.blog-post{
+	&.blog {
+		@extend .post-template-default;
 		
+		article {
+			padding-bottom: 10px;
+			border-bottom: 1px solid $light_grey;
+			margin: 20px 0;
+			
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.entry-meta {
+				font-size: 12px;
+			}
+			h2 {
+				margin: 0.5em 0;
+				font-size: 24px;
+			}
+			h3 {
+				margin: 0.5em 0;
+				font-size: 20px;
+			}
+			img {
+				float: right;
+				margin-left: 15px;
+			}
+		}
 	}
 }

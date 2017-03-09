@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         
+<html class="no-js lt-ie9 ie8">
+   <![endif]-->
+   <!--[if IE 9]>         
+   <html class="no-js gt-ie9 ie9">
+      <![endif]-->
+      <!--[if gt IE 8]><!--> 
+      <html class="no-js gt-ie9">
+         <!--<![endif]-->
+         <head>
+            <!--
+               Description:
+               Version:
+               Author:
+               
+               //-->
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <!-- #DNS prefetching -->
+            <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
+            <link rel="dns-prefetch" href="//ajax.googleapis.com">
+            <link rel="dns-prefetch" href="//use.typekit.net">
+            <link rel="dns-prefetch" href="//google-analytics.com">
+            <!-- #Asset Prefetching -->
+            <!-- Fetch and Download Assets before requested by the user  -->
+            <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
+            <link rel="prefetch" href="">
+            <!-- #Page Prefetching -->
+            <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
+            <link rel="prefetch" href="index.html">
+            <!-- #Typekit -->
+            <title>Sassy Starter</title>
+            <meta name="description" content="">
+            <meta name="robots" content="all">
+            <!-- Mobile Metas -->
+            <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+            <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
+            <!-- http://mathiasbynens.be/notes/touch-icons -->
+            <link rel="icon" type="image/ico" href="favicon.ico">
+            <link rel="icon" type="image/png" href="favicon.png">
+            <!-- roboto & roboto slab from googlefonts -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+            <!-- CSS, you gotta have style -->
+            <link rel="stylesheet" href="css/owl.carousel.css">
+            <link rel="stylesheet" href="css/owl.transitions.css">
+            <!-- Modernizer, cause some browsers suck -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+            <link rel="stylesheet" href="styles.css">
+         </head>
+         <body class="page-template-page-booking-form">
+            <header class="searchresults">
+               <div class="wrapper">
+                  <div class="navigation">
+                     <nav class="main-nav">
+                        <span class="menu-icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        </span>
+                        <button type="button" class="btn-transparent">Let your Property!</button>
+                        <ul>
+                           <li><a href="#">News</a></li>
+                           <li><a href="#">What to do?</a></li>
+                           <li><a href="#">Holiday Areas</a></li>
+                           <li><a href="#">Local information</a></li>
+                           <li><a href="#">Contact Us</a></li>
+                           <li>Call us: 0800 9804070</li>
+                        </ul>
+                        <span class="phone">
+                        <a href="tel:+448009804070">
+                        <img src="/img/phone.svg">
+                        </a>
+                        </span>
+                     </nav>
+                     <nav class="personal-nav">
+                        <ul class="logged-out" style="display:none">
+                           <li><a href="#">Log In</a></li>
+                           <li><a href="#">Sign Up</a></li>
+                        </ul>
+                        <ul class="logged-in">
+                           <li><a href="#"><span class="icon-hearth"></span>7</a></li>
+                           <li><a href="#"><span class="icon-bell"></span>2</a></li>
+                           <li><a href="#"><span class="img-holder">username</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="brand">
+                     <a href="index.html">
+                     <img src="/img/logo.svg">
+                     <span>Welcome to</span>
+                     <strong>Dorset Coastal Cottages</strong>
+                     </a>
+                  </div>
+                  <div class="book">
+                     <form name="book">
+                        <input type="date">
+                        <div class="select">
+                           <select>
+                              <option value="" disabled selected>Duration</option>
+                              <option value="1">1 day</option>
+                              <option value="2">2 days</option>
+                              <option value="3">3 days</option>
+                              <option value="4">4 days</option>
+                              <option value="5">5 days</option>
+                              <option value="6">6 days</option>
+                              <option value="7">7 days</option>
+                              <option value="14">14 days</option>
+                           </select>
+                        </div>
+                        <div class="select">
+                           <select>
+                              <option value="" disabled selected>Guests</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                           </select>
+                        </div>
+                        <button type="button" class="btn-submit">Search</button>
+                     </form>
+                  </div>
+               </div>
+            </header>
+            
+			<div class="content">
+				<div class="maincontent">
+					<section class="content" role="main">
+						<p id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="http://dcc.chillifish.com/" rel="v:url" property="v:title">Home</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="http://dcc.chillifish.com/booking-form/" rel="v:url" property="v:title">Booking Form</a> » <span class="breadcrumb_last">Thank you for your booking</span></span>
+							</span>
+							</span>
+						</p>
+						<article id="post-5731" class="post-5731 page type-page status-publish hentry">
+							<header class="header">
+								<h1 class="entry-title">Thank you for your booking test</h1> </header>
+							<section class="entry-content">
+								<p><strong>Thank you for your booking</strong></p>
+								<p>Thank you for your booking, the dates booked are now provisionally reserved for you. We will call you shortly to confirm the dates booked, amount due and take payment.
+									<br> Please note that payments made using a credit card will incur a 2% surcharge, debit cards are free of charge, American Express and Diners cards are not accepted.</p>
+								<p>We look forward to speaking to you shortly.</p>
+								<p>Kind regards
+									<br> Dorset Coastal Cottages</p>
+								<p>&nbsp;</p>
+								<div class="entry-links"></div>
+							</section>
+						</article>
+					</section>
+					<div class="clear"></div>
+				</div>
+				<aside>
+				</aside>
+			</div>
+ 
+            <footer>
+               <div class="divider"></div>
+               <div class="wrapper">
+                  <nav>
+                     <h6>About Dorset Coastal Cottages</h6>
+                     <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Request a 2016 Brochure</a></li>
+                        <li><a href="#">Our Partners & Associations</a></li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h6>About the cottages</h6>
+                     <ul>
+                        <li><a href="#">All Cottages</a></li>
+                        <li><a href="#">About the Cottages</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Short Breaks</a></li>
+                        <li><a href="#">News</a></li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h6>Useful information</h6>
+                     <ul>
+                        <li><a href="#">Getting to Dorset</a></li>
+                        <li><a href="#">Help & Information</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Prospective Owners</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                     </ul>
+                  </nav>
+                  <nav>
+                     <h6>Prospective Owners</h6>
+                     <ul>
+                        <li><a href="#">Joining Procedure</a></li>
+                        <li><a href="#">Why Choose Us?</a></li>
+                        <li><a href="#">Housekeeping</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Financial Information</a></li>
+                        <li><a href="#">Quality Assessments</a></li>
+                     </ul>
+                  </nav>
+                  <nav class="social">
+                     <a href="#" class="btn btn-request">Request a Brochure</a>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <svg width="49px" height="44px" viewBox="0 0 49 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                 <g id="twitter" fill="#66942E"  transform="translate(2.000000, 2.000000)">
+                                    <path d="M38.1070353,4.48608145 C36.6431307,5.11536652 35.1786465,5.50834389 33.7153216,5.66617195 C35.3681919,4.67518552 36.4860457,3.27529412 37.0685934,1.46649774 C35.5568678,2.36278733 33.9434137,2.9761448 32.2276515,3.30657014 C30.7162157,1.70222624 28.8590191,0.899764706 26.6549022,0.899764706 C24.5455581,0.899764706 22.7471959,1.64285973 21.2592359,3.12933937 C19.7715657,4.615819 19.0278756,6.41274208 19.0278756,8.52039819 C19.0278756,9.08655204 19.0907675,9.66863348 19.2168413,10.2663529 C16.0997767,10.1091041 13.1757353,9.32662443 10.4444274,7.91891403 C7.71311947,6.51091403 5.39510156,4.63522172 3.49037367,2.29154751 C2.79769264,3.47105882 2.45135213,4.75308597 2.45135213,6.13733937 C2.45135213,7.44282353 2.75827649,8.65419005 3.37241502,9.77085973 C3.98626372,10.8875294 4.81284375,11.7919276 5.85186528,12.4840543 C4.62387805,12.4368507 3.47472313,12.1142443 2.40440053,11.5165249 L2.40440053,11.6109321 C2.40440053,13.4512941 2.98289063,15.0672217 4.13987081,16.4595837 C5.29685099,17.8519457 6.7569878,18.728543 8.51999143,19.0902443 C7.8589013,19.2631312 7.18969607,19.3497195 6.51295541,19.3497195 C6.07213205,19.3497195 5.59189253,19.3103348 5.07252668,19.2321448 C5.56059146,20.7577195 6.45788872,22.0119457 7.76441845,22.9951131 C9.07094817,23.9785701 10.5507931,24.4853575 12.2036633,24.5172127 C9.43322904,26.6874208 6.27703811,27.7728145 2.73509051,27.7728145 C2.05806002,27.7728145 1.44421132,27.7418281 0.893254573,27.6786968 C4.43520217,29.9592398 8.33914082,31.0993665 12.6053603,31.0993665 C15.3129026,31.0993665 17.8552449,30.6710588 20.2318074,29.8138643 C22.6092393,28.9566697 24.6397511,27.8084344 26.3242123,26.3688688 C28.0083836,24.9298824 29.4606951,23.2742805 30.6805673,21.4023529 C31.9004394,19.5307149 32.8093296,17.576543 33.4078176,15.5395475 C34.0060158,13.5022624 34.3051149,11.4617919 34.3051149,9.41668778 C34.3051149,8.97621719 34.2972896,8.64608145 34.2813493,8.42570136 C35.7771345,7.34088688 37.0523632,6.02729412 38.1070353,4.48608145 L38.1070353,4.48608145 Z" id="Shape"></path>
+                                 </g>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg width="45" height="44" viewBox="0 0 45 44" xmlns="http://www.w3.org/2000/svg">
+                                 <g  transform="translate(-1314 -153)" fill="#66942E" fill-rule="evenodd">
+                                    <path d="M1347.352 168.648v-4.6h-2.3v4.6h-4.601v2.3h4.6v4.601h2.301v-4.6h4.6v-2.301zM1338.256 181.089a9.361 9.361 0 0 0-1.052-1.186 15.549 15.549 0 0 0-1.15-.998c-.383-.3-.734-.587-1.051-.863a4.26 4.26 0 0 1-.773-.862 1.647 1.647 0 0 1-.296-.917c0-.431.137-.835.413-1.213a7.087 7.087 0 0 1 1.006-1.096c.396-.354.79-.74 1.186-1.16.395-.419.73-.973 1.007-1.662.275-.689.413-1.476.413-2.363a6.917 6.917 0 0 0-.701-3.037c-.467-.97-1.126-1.726-1.977-2.265h2.426l2.426-1.42h-7.853c-1.114 0-2.235.12-3.36.36-1.666.372-3.068 1.22-4.206 2.543-1.138 1.324-1.707 2.825-1.707 4.502 0 1.773.638 3.247 1.914 4.421 1.276 1.174 2.806 1.761 4.592 1.761.359 0 .778-.03 1.258-.09a3.921 3.921 0 0 1-.126.387l-.144.386a2.455 2.455 0 0 0-.126.773c0 .79.383 1.684 1.15 2.678-.91.024-1.809.105-2.695.243-.887.138-1.815.353-2.786.647a8.659 8.659 0 0 0-2.606 1.276c-.767.557-1.342 1.219-1.725 1.986-.443.887-.665 1.695-.665 2.426 0 .803.18 1.53.539 2.184.36.652.82 1.186 1.384 1.599.563.414 1.213.76 1.95 1.043a11.32 11.32 0 0 0 2.192.602c.725.12 1.44.18 2.148.18 3.21 0 5.727-.785 7.548-2.355 1.677-1.462 2.516-3.151 2.516-5.068a6.01 6.01 0 0 0-.297-1.914 5.363 5.363 0 0 0-.772-1.528zm-6.929-6.533a3.49 3.49 0 0 1-1.743-.467 4.627 4.627 0 0 1-1.402-1.213 8.743 8.743 0 0 1-1.006-1.68 9.204 9.204 0 0 1-.638-1.87 8.24 8.24 0 0 1-.207-1.78c0-1.15.306-2.138.917-2.964.61-.827 1.473-1.24 2.588-1.24.79 0 1.506.245 2.147.736a5.135 5.135 0 0 1 1.51 1.87c.365.754.647 1.536.845 2.344.197.81.296 1.573.296 2.292 0 1.198-.26 2.16-.782 2.885-.52.725-1.362 1.087-2.525 1.087zm4.97 13.497a3.538 3.538 0 0 1-1.34 1.32 6.818 6.818 0 0 1-1.805.701 8.849 8.849 0 0 1-2.022.225 9.83 9.83 0 0 1-2.283-.27 9.113 9.113 0 0 1-2.165-.817 4.505 4.505 0 0 1-1.672-1.51c-.425-.64-.638-1.369-.638-2.184 0-.718.162-1.36.486-1.922a3.954 3.954 0 0 1 1.24-1.348 7.027 7.027 0 0 1 1.761-.827 11.236 11.236 0 0 1 1.94-.45 14.234 14.234 0 0 1 1.906-.125c.395 0 .695.012.899.036.072.048.254.174.548.377l.593.414c.102.072.287.21.557.413.27.204.461.357.575.458.114.102.278.255.494.459.216.203.374.38.476.53.102.15.228.332.378.548.15.216.254.422.314.62s.117.413.17.647c.055.234.082.476.082.728 0 .755-.165 1.414-.495 1.977z"/>
+                                 </g>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg width="42px" height="44px" viewBox="0 0 42 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                 <g id="fbthumb" transform="translate(7.000000, 2.000000)" fill="#66942E">
+                                    <path d="M27.0175556,16.7611765 C27.6091111,15.8744118 27.9044444,14.8980882 27.9044444,13.8317647 C27.9044444,12.5975735 27.4462222,11.5255147 26.5291111,10.6140441 C25.6115556,9.70345588 24.5253333,9.24838235 23.27,9.24838235 L20.0835556,9.24838235 C20.6626667,8.06227941 20.9526667,6.91191176 20.9526667,5.79772059 C20.9526667,4.39588235 20.7411111,3.28169118 20.3188889,2.45492647 C19.8962222,1.62794118 19.2806667,1.02 18.4717778,0.630441176 C17.6628889,0.241102941 16.7517778,0.0465441176 15.738,0.0465441176 C15.1222222,0.0465441176 14.5791111,0.268235294 14.1084444,0.711617647 C13.5895556,1.21477941 13.2153333,1.86198529 12.986,2.65279412 C12.7566667,3.44338235 12.5724444,4.20132353 12.4337778,4.92617647 C12.2951111,5.65102941 12.0806667,6.16323529 11.7911111,6.46279412 C11.1995556,7.09786765 10.5537778,7.86485294 9.85377778,8.76330882 C8.63466667,10.3327941 7.80777778,11.2614706 7.37333333,11.5491176 L2.41266667,11.5491176 C1.77288889,11.5491176 1.22666667,11.7741176 0.774,12.2230147 C0.321555556,12.6723529 0.0951111111,13.2145588 0.0951111111,13.8496324 L0.0951111111,25.3517647 C0.0951111111,25.9868382 0.321333333,26.5288235 0.774,26.9781618 C1.22688889,27.4275 1.77288889,27.6525 2.41266667,27.6525 L7.62666667,27.6525 C7.89222222,27.6525 8.72488889,27.8920588 10.1251111,28.3711765 C11.6097778,28.8864706 12.9164444,29.2788971 14.0448889,29.5484559 C15.1735556,29.8182353 16.3171111,29.9530147 17.476,29.9530147 L19.1593333,29.9530147 L19.8115556,29.9530147 C21.5133333,29.9530147 22.8831111,29.4703676 23.9213333,28.5059559 C24.9591111,27.5413235 25.4722222,26.2263971 25.4604444,24.5609559 C26.1844444,23.6382353 26.5466667,22.5719118 26.5466667,21.3619853 C26.5466667,21.0986029 26.5286667,20.8409559 26.4924444,20.5890441 C26.9508889,19.7865441 27.1806667,18.9238235 27.1806667,18.0013235 C27.1804444,17.5698529 27.1262222,17.15625 27.0175556,16.7611765 L27.0175556,16.7611765 Z M4.38622222,25.0105147 C4.15688889,25.2379412 3.88533333,25.3519853 3.57155556,25.3519853 C3.25755556,25.3519853 2.986,25.2379412 2.75666667,25.0105147 C2.52733333,24.7830882 2.41266667,24.5133088 2.41266667,24.2016176 C2.41266667,23.8901471 2.52711111,23.6205882 2.75666667,23.3929412 C2.98622222,23.1652941 3.25755556,23.0514706 3.57155556,23.0514706 C3.88533333,23.0514706 4.15688889,23.1652941 4.38622222,23.3929412 C4.61555556,23.6205882 4.73022222,23.8901471 4.73022222,24.2016176 C4.73022222,24.5133088 4.61555556,24.7830882 4.38622222,25.0105147 L4.38622222,25.0105147 Z M25.1984444,15.3061765 C24.9388889,15.8574265 24.616,16.1388971 24.2297778,16.1508088 C24.4106667,16.3546324 24.5617778,16.6391912 24.6824444,17.0044853 C24.8031111,17.37 24.8631111,17.7024265 24.8631111,18.0019853 C24.8631111,18.8283088 24.5435556,19.5414706 23.9037778,20.1403676 C24.1213333,20.5235294 24.2297778,20.9371324 24.2297778,21.3802941 C24.2297778,21.8234559 24.1242222,22.2639706 23.9128889,22.7011765 C23.7017778,23.1381618 23.4151111,23.4527206 23.0531111,23.6444118 C23.1133333,24.00375 23.1433333,24.3392647 23.1433333,24.6507353 C23.1433333,26.6514706 21.9844444,27.6518382 19.6668889,27.6518382 L17.4766667,27.6518382 C15.8951111,27.6518382 13.8313333,27.2148529 11.2844444,26.34 C11.224,26.3161765 11.0491111,26.2530882 10.7593333,26.1513971 C10.4695556,26.0497059 10.2553333,25.9747059 10.1164444,25.9268382 C9.97755556,25.8785294 9.76644444,25.8097059 9.48266667,25.7199265 C9.19888889,25.6301471 8.96977778,25.5641912 8.79466667,25.5222794 C8.61977778,25.4805882 8.42044444,25.4415441 8.19733333,25.4055882 C7.97422222,25.3696324 7.784,25.3517647 7.62711111,25.3517647 L7.04777778,25.3517647 L7.04777778,13.8500735 L7.62711111,13.8500735 C7.82022222,13.8500735 8.03444444,13.7960294 8.26977778,13.6883824 C8.50511111,13.5805147 8.74666667,13.4188235 8.994,13.2030882 C9.24155556,12.9873529 9.47377778,12.7747059 9.69111111,12.5649265 C9.90844444,12.3553676 10.1497778,12.0917647 10.4153333,11.7743382 C10.6808889,11.4566912 10.8891111,11.2021324 11.04,11.0104412 C11.1908889,10.81875 11.3808889,10.5730147 11.6102222,10.2734559 C11.8395556,9.97411765 11.9784444,9.79433824 12.0266667,9.73433824 C12.6904444,8.91970588 13.1551111,8.37463235 13.4206667,8.09889706 C13.9155556,7.58382353 14.2746667,6.92779412 14.4977778,6.13102941 C14.7213333,5.33404412 14.9053333,4.58227941 15.0497778,3.87551471 C15.1946667,3.16852941 15.4242222,2.65919118 15.7382222,2.34772059 C16.8968889,2.34772059 17.6695556,2.62919118 18.0555556,3.19235294 C18.4417778,3.75551471 18.6348889,4.62419118 18.6348889,5.79838235 C18.6348889,6.50514706 18.3448889,7.46669118 17.7655556,8.68279412 C17.1864444,9.89889706 16.8968889,10.8544853 16.8968889,11.5493382 L23.2697778,11.5493382 C23.8737778,11.5493382 24.4106667,11.7798529 24.8813333,12.2413235 C25.352,12.7025735 25.5877778,13.2386029 25.5877778,13.8498529 C25.5877778,14.2691912 25.458,14.7544853 25.1984444,15.3061765 L25.1984444,15.3061765 Z" id="Shape"></path>
+                                 </g>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="background-dark">
+                  <div class="wrapper">
+                     <div class="info">
+                        <p>Dorset Coastal Cottages, 3 Station Road, Wool, Wareham, Dorset BH20 6BL, United Kingdom | E-mail: <a href="mailto:hols@dorsetcoastalcottages.com">hols@dorsetcoastalcottages.com</a><br>
+                           Tel: 01929 401420 | Fax: 01929 460125 | International Tel: +44 (0)1929 401420 | Part of Dorset Holiday Cottages Ltd.<br>
+                           Copyright ©2016 Dorset Coastal Cottages. All rights reserved.
+                        </p>
+                     </div>
+                     <div class="newsletter">
+                        <span>Subscribe to the newsletter: </span>
+                        <form>
+                           <input type="email">
+                           <button type="submit" class="btn-submit">submit</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- SCRIPTS -->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+            <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
+            <script>
+               $("#toggle-filter").click(function(){
+               	$(this).toggleClass("open");
+                $("div.content > aside > form").slideToggle("slow");
+               });
+            </script>
+            <!-- Google Analytics -->
+         </body>
+      </html>

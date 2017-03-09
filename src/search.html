@@ -309,9 +309,11 @@
 					<button id="formBoxSubmit" class="btn-submit submit-form" data-target-form="search_property"><span></span>Search</button>
 				</fieldset>
 			</form>
-			<button id="toggle-filter" class="">Filters</button>
+			<button id="toggle-filter" class="toggle">Filters</button>
+			<button id="toggle-map" class="toggle">Map</button>
 		</aside>
 		<div id="results">
+			
 			<div id="map">
 			</div>
 			<div class="page-filters">
@@ -679,6 +681,10 @@
     	$("#toggle-filter").click(function(){
     		$(this).toggleClass("open");
 		    $("div.content > aside > form").slideToggle("slow");
+		});
+		$("#toggle-map").click(function(){
+    		$(this).toggleClass("open");
+		    $("#map").slideToggle("slow");
 		});
     </script>
     <!-- Google Analytics -->
