@@ -29,7 +29,6 @@
 				padding-bottom: 0; 
 			}
 			form[name="side-search"] {
-			
 				
 				input[type="text"], input[type="number"], .btn-submit {width: 100%;}
 				@include media($fullhd) {
@@ -71,7 +70,6 @@
 				font-weight: bold;
 			}
 			.refine legend {
-				
 				padding-top: 20px;
 				background: $green;
 				color: $white;
