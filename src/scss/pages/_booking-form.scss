@@ -37,8 +37,8 @@ body {
 				}
 			}
 			.maincontent {
-				@include media($mobile) {
-					width: 100%;
+			    @include media($mobile) {
+					@include span-columns(12);
 				}
 			}
 		}

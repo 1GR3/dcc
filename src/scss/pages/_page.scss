@@ -1,5 +1,5 @@
 body {
-	&.post-template-default {
+	&.page-template-default {
 		.content {
 			@include outer-container;
 			aside{
@@ -59,37 +59,7 @@ body {
 			}
 		}
 	}
-	&.single-post{
+	&.page {
 		
-	}
-	&.blog {
-		@extend .post-template-default;
-		
-		article {
-			padding-bottom: 10px;
-			border-bottom: 1px solid $light_grey;
-			margin: 20px 0;
-			
-			&:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-			.entry-meta {
-				font-size: 12px;
-			}
-			h2 {
-				margin: 0.5em 0;
-				font-size: 24px;
-			}
-			h3 {
-				margin: 0.5em 0;
-				font-size: 20px;
-			}
-			img {
-				float: right;
-				margin-left: 15px;
-			}
-		}
 	}
 }

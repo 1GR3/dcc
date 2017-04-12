@@ -116,8 +116,8 @@
 		}
 		#results {
 			
-			
 			float: left;
+			margin-top: 20px;
 			
 			@include span-columns(9);
 			@include media($laptop) {
